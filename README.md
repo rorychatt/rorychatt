@@ -1,19 +1,15 @@
-## Hi there 👋
+# Hi there 👋
 
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=rorychatt)
+I'm <Your Name>, a passionate developer from <Your Location>.
 
+## 🛠️ Languages and Tools
+[![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=)](https://github.com/anuraghazra/github-readme-stats)
 
-<!--
-**rorychatt/rorychatt** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+## 📊 GitHub Stats
+!GitHub Stats
 
-Here are some ideas to get you started:
+## 🔥 Streak Stats
+!GitHub Streak
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+## 🌱 Contribution Graph
+!GitHub Contribution Graph
