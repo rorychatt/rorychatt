@@ -7,7 +7,8 @@ I'm Mikael Rinne, a passionate developer from Estonia.
 
 
 ## 📊 GitHub Activity
-![Ashutosh's github activity graph](https://github-readme-activity-graph.cyclic.app/graph?username=rorychatt&theme=react-dark)
+![Ashutosh's github activity graph](https://github-readme-activity-graph.vercel.app/graph?username=rorychatt&theme=react-dark)
+
 
 
 ## 🔥 Trophies
