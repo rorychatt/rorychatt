@@ -3,13 +3,12 @@
 I'm Mikael Rinne, a passionate developer from Estonia.
 
 ## 🛠️ Languages and Tools
-[![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=rorychatt)](https://github.com/anuraghazra/github-readme-stats)
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=YOUR_GITHUB_USERNAME&hide=html&layout=compact)
 
-## 📊 GitHub Stats
-![GitHub Stats]
 
-## 🔥 Streak Stats
-![GitHub Streak]
+## 📊 GitHub Activity
+![rorychatt's github activity graph](https://github-readme-activity-graph.cyclic.app/graph?username=YOUR_GITHUB_USERNAME&theme=react-dark)
 
-## 🌱 Contribution Graph
-![GitHub Contribution Graph]
+
+## 🔥 Trophies
+![trophy](https://github-profile-trophy.vercel.app/?username=YOUR_GITHUB_USERNAME&theme=onedark)
