@@ -3,7 +3,7 @@
 I'm Mikael Rinne, a passionate developer from Estonia.
 
 ## 🛠️ Languages and Tools
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=rorychatt&layout=compact&langs_count=100)
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=rorychatt&layout=compact&langs_count=100&hide=html)
 
 
 ## 📊 GitHub Activity
