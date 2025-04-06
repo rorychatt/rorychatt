@@ -1,6 +1,6 @@
 # Hi there 👋
 
-I'm Mikael Rinne, a passionate developer from Estonia.
+I'm Mikael Rinne, a passionate developer from Estonia, living in Sweden
 
 ## 🛠️ Languages and PR stats
 ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=rorychatt&layout=compact&langs_count=100&hide=html)
