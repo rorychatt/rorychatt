@@ -34,6 +34,9 @@
     [3, 'Years of history shown']
   ];
   var statsEl = document.getElementById('stats');
+  // index.html ships these pre-rendered (scripts/prerender.py) so the page reads
+  // correctly without JS; clear them before re-rendering the animated versions.
+  statsEl.textContent = '';
   STATS.forEach(function (s) {
     var d = el('div', 'stat');
     // render the real value up front so it is correct without JS animation
@@ -56,6 +59,7 @@
 
   /* ---------- top projects ---------- */
   var grid = document.getElementById('projects-grid');
+  grid.textContent = '';
   GH.projects.forEach(function (p, i) {
     var c = el('article', 'proj reveal');
     var stars = p.stars > 0 ? '<span class="pill star">★ ' + p.stars + '</span>' : '';
@@ -98,9 +102,14 @@
     var total = list.reduce(function (s, d) { return s + days[d]; }, 0);
     var active = list.filter(function (d) { return days[d] > 0; }).length;
 
+    // percentage of days *elapsed*, so a partial year compares fairly with a full one
+    var pct = Math.round(active / list.length * 100);
+    var partial = list.length < 365;
+
     var box = el('div', 'hm-year');
     box.appendChild(el('div', 'hm-year-head',
-      '<b>' + y + '</b><span>' + num(total) + ' contributions · ' + active + ' active days</span>'));
+      '<b>' + y + '</b><span>' + num(total) + ' contributions · active ' + pct + '% of days' +
+      (partial ? ' (year to date)' : '') + '</span>'));
 
     var g = el('div', 'hm-grid');
     // pad so each column is a real Sun–Sat week
@@ -140,12 +149,12 @@
   var MILESTONES = {
     '2022': ['Joined University of Tartu Institute of Technology as engineer &amp; researcher'],
     '2023': ['Founded SpaceCorps Technology OÜ', 'First-author paper at IEEE IVNC 2023', 'Joined Nixor EE AS'],
-    '2024': ['Graduated BSc Chemistry, University of Tartu', 'Completed SALT full-stack C# programme', 'Joined Scania as Solutions Architect'],
-    '2025': ['Became 1st Founding Engineer at Ivy'],
-    '2026': ['Ivy raising $5M seed · SpaceCorps launching summer 2026']
+    '2024': ['Completed SALT full-stack C# programme', 'Joined Scania as Solutions Architect'],
+    '2025': ['Became 1st Founding Engineer at Ivy']
   };
 
   var tlEl = document.getElementById('timeline-list');
+  tlEl.textContent = '';
   var groups = {};
   GH.timeline.forEach(function (r) { (groups[r.from] = groups[r.from] || []).push(r); });
   // milestone-only years (e.g. 2022) still deserve a row

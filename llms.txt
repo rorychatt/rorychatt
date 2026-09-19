@@ -1,0 +1,75 @@
+# Mikael Rinne
+
+> Full-stack software engineer based in Stockholm, Sweden. 1st Founding Engineer at Ivy
+> (a .NET AI startup) and Founder & CEO of SpaceCorps Technology OÜ. Works primarily in
+> C#/.NET, TypeScript/React and Rust, with a research background in machine learning,
+> chemistry and physics. GitHub handle: rorychatt.
+
+Canonical page: https://rorychatt.github.io/rorychatt/
+Contact: mikael@spacecorpstechnology.com
+
+## Summary
+
+- **Current role:** 1st Founding Engineer at Ivy (2025 – now, Stockholm). Owns the codebase,
+  product engineering, AI modelling and project planning; leads the development team.
+  Ivy is raising a $5M seed round.
+- **Company founded:** SpaceCorps Technology OÜ (2023 – now). Open-source 3D MMO RPG that runs
+  in the browser; team of six; launching summer 2026.
+- **Previous:** Solutions Architect / Senior Full-stack Engineer at Scania (2024–2025);
+  Full-stack Software Engineer at Nixor EE AS (2023–2024); Full-stack Software Engineer &
+  Researcher at University of Tartu Institute of Technology (2022–2023); private tutor in
+  the natural sciences (2019–2024).
+- **Research:** First author of "An Online Tool for Thermal-Field Emission Calculations from
+  Metal and Semiconducting Emitters", IEEE IVNC 2023 — doi:10.1109/IVNC57695.2023.10188950.
+- **Education:** Full-stack C# Developer, SALT School of Applied Technology (2024).
+  Chemistry studies at University of Tartu (2019–2024, did not graduate — left to build
+  software full time).
+- **Languages:** English (native), Estonian (fluent), Russian (fluent).
+- **Git history:** 25,000+ GitHub contributions since January 2023 across public, private and
+  organisation repositories. Primary languages by commit volume: C#, TypeScript, Rust.
+
+## Technical focus
+
+- **Languages:** C#, TypeScript, Rust, JavaScript, Python, SQL, WGSL/GLSL, PowerShell/Bash,
+  C/C++, Java, Fortran, Assembler, MATLAB, Dart
+- **AI engineering:** RAG pipelines, embeddings and vector search, agentic tooling, MCP,
+  Anthropic and OpenAI APIs, Microsoft.Extensions.AI, Semantic Kernel, Qdrant/pgvector,
+  structured output and tool calling, prompt and eval harnesses
+- **Backend:** .NET 9, ASP.NET MVC/WebAPI, Entity Framework Core, SignalR, PostgreSQL, Dapper,
+  .NET Aspire, Node.js, FastAPI, SQL Server, Redis, ANTLR
+- **Rust & systems:** Tokio, serde, Cargo workspaces, axum, tracing, crossbeam, criterion,
+  proptest, redb/bincode, Tauri, binary protocols, lock-free concurrency
+- **Frontend:** React 19, Tailwind, Radix UI/shadcn, Vite, WebGL/three.js, WebGPU, TanStack,
+  CodeMirror, ECharts, Framer Motion, Apache Arrow, Angular
+- **Scientific computing:** neural networks, XGBoost, Monte-Carlo simulation, Gaussian
+  approximations, molecular dynamics, TensorFlow, NumPy/SciPy, COMSOL, Modelica
+- **Practice:** TDD/SOLID, CI/CD, GitHub Actions, Playwright, Docker, xUnit, Vitest/Jest,
+  Kubernetes, AWS/Azure, mob programming, Agile
+
+## Pages
+
+- [Portfolio (single page)](https://rorychatt.github.io/rorychatt/): full CV, ranked projects,
+  three-year contribution heatmap, reverse-chronological repository timeline, experience,
+  education and toolkit. Content is server-served static HTML; the project, heatmap and
+  timeline sections are rendered client-side from `assets/data.js`.
+- [Source repository](https://github.com/rorychatt/rorychatt): the site itself, plus
+  `scripts/build-data.py`, which regenerates the git data from the GitHub GraphQL API.
+
+## Notable projects
+
+- [Ivy Framework](https://github.com/Ivy-Interactive/Ivy-Framework) (C#, 434★): framework for
+  building internal tools with LLM code generation; front-end and back-end in one C# codebase.
+- [Ivy Tendril](https://github.com/Ivy-Interactive/Ivy-Tendril) (C#, 198★): developer tool for
+  an agentic era, where agents write most of the code.
+- [SpaceCorps 2](https://github.com/rorychatt/SpaceCorps2) (TypeScript): WebGL 3D MMO RPG,
+  client and server.
+- [GETELEC](https://github.com/AndKyr/GETELEC): thermal-field emission calculation tool behind
+  the IVNC 2023 paper.
+
+## Links
+
+- [GitHub](https://github.com/rorychatt)
+- [LinkedIn](https://www.linkedin.com/in/mikael-rinne/)
+- [Ivy](https://ivy.app)
+- [SpaceCorps Technology](https://spacecorpstechnology.com)
+- [IVNC 2023 paper (DOI)](https://doi.org/10.1109/IVNC57695.2023.10188950)
