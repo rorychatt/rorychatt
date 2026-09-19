@@ -150,7 +150,8 @@
   GH.timeline.forEach(function (r) { (groups[r.from] = groups[r.from] || []).push(r); });
   // milestone-only years (e.g. 2022) still deserve a row
   Object.keys(MILESTONES).forEach(function (y) { groups[y] = groups[y] || []; });
-  var years = Object.keys(groups).sort();
+  // newest year first, reading backwards into history
+  var years = Object.keys(groups).sort().reverse();
   var maxCommits = Math.max.apply(null, GH.timeline.map(function (r) { return r.commits; }));
 
   years.forEach(function (y) {
