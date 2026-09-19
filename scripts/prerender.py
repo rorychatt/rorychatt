@@ -9,6 +9,7 @@ so the next run can replace it cleanly.
 
     python3 scripts/prerender.py
 """
+import hashlib
 import html
 import json
 import pathlib
@@ -118,6 +119,21 @@ def timeline_html(gh):
     return "\n".join(out)
 
 
+def bust(src):
+    """Stamp each local asset URL with a hash of its contents.
+
+    GitHub Pages serves assets with max-age=600, so a returning visitor can
+    hold a stale app.js against fresh HTML — which renders the pre-rendered
+    sections twice. A content hash in the URL makes that impossible.
+    """
+    def sub(m):
+        prefix, path = m.group(1), m.group(2)
+        digest = hashlib.sha256((ROOT / path).read_bytes()).hexdigest()[:10]
+        return f'{prefix}{path}?v={digest}"'
+
+    return re.sub(r'((?:href|src)=")(assets/[\w./-]+?)(?:\?v=[0-9a-f]+)?"', sub, src)
+
+
 def splice(src, marker, inner):
     """Replace whatever sits inside the marked container with `inner`."""
     begin, end = f"<!-- BEGIN {marker} -->", f"<!-- END {marker} -->"
@@ -135,6 +151,7 @@ def main():
     s = splice(s, "projects", projects_html(gh))
     s = splice(s, "timeline", timeline_html(gh))
     s = re.sub(r'(Git data generated )[\d-]+', r"\g<1>" + gh["totals"]["generated"], s)
+    s = bust(s)
     (ROOT / "index.html").write_text(s)
     print(f'pre-rendered {len(gh["projects"])} projects, {len(gh["timeline"])} timeline rows')
 
