@@ -1,0 +1,385 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mikael Rinne — Full-stack Software Engineer</title>
+<meta name="description" content="Mikael Rinne — Founding engineer at Ivy, founder & CEO of SpaceCorps. Full-stack engineer (C#/.NET, TypeScript, Rust) with a background in machine learning, chemistry and physics.">
+<meta name="author" content="Mikael Rinne">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Mikael Rinne — Full-stack Software Engineer">
+<meta property="og:description" content="1st Founding Engineer @ Ivy. Founder & CEO @ SpaceCorps. 25,000+ GitHub contributions across C#, TypeScript and Rust.">
+<meta property="og:url" content="https://rorychatt.github.io/">
+<meta property="og:image" content="https://avatars.githubusercontent.com/u/40919111?v=4">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <div class="brand">mikael<span>.</span>rinne</div>
+    <ul>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#activity">Activity</a></li>
+      <li><a href="#timeline">Timeline</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#skills">Skills</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="eyebrow">Stockholm · Estonia · Remote</div>
+    <h1>Mikael Rinne —<br><span class="grad">full-stack engineer</span><br>who ships.</h1>
+    <p class="tagline">
+      <strong>1st Founding Engineer at Ivy</strong>, building the framework that unifies C# front-end and
+      back-end for LLM code generation. <strong>Founder &amp; CEO of SpaceCorps</strong>, a 3D MMO RPG
+      that runs in your browser.
+    </p>
+    <p class="subline">
+      Background in machine learning, chemistry and physics. Published first-author research with CERN
+      collaborators. Six years of shipping — from Fortran simulation code to Rust runtimes to .NET AI platforms.
+    </p>
+    <div class="cta">
+      <a class="btn primary" href="https://github.com/rorychatt" target="_blank" rel="noopener">GitHub →</a>
+      <a class="btn" href="https://www.linkedin.com/in/mikael-rinne/" target="_blank" rel="noopener">LinkedIn</a>
+      <a class="btn" href="mailto:pavel.rinne@gmail.com">Email</a>
+      <a class="btn" href="#projects">See the work</a>
+    </div>
+    <div class="stats" id="stats"></div>
+  </div>
+</header>
+
+<section id="projects">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="sec-num">01 / TOP PROJECTS</span>
+      <h2>What I've actually been building</h2>
+      <p class="sec-sub">
+        Ranked by commit volume across three years of git history — public repos, private repos and
+        organisation work combined. Not a wishlist; this is where the commits went.
+      </p>
+    </div>
+    <div class="proj-grid" id="projects-grid"></div>
+  </div>
+</section>
+
+<section id="activity">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="sec-num">02 / GIT ACTIVITY</span>
+      <h2>Three years, day by day</h2>
+      <p class="sec-sub">
+        Every contribution from January 2023 to today, pulled live from the GitHub API and baked into
+        this page at build time. Public and private, commits, PRs, reviews and issues.
+      </p>
+    </div>
+    <div class="hm-panel reveal">
+      <div class="hm-scroll" id="heatmap"></div>
+      <div class="hm-legend">
+        <span>Less</span>
+        <span class="hm-d" data-l="0"></span>
+        <span class="hm-d" data-l="1"></span>
+        <span class="hm-d" data-l="2"></span>
+        <span class="hm-d" data-l="3"></span>
+        <span class="hm-d" data-l="4"></span>
+        <span>More</span>
+      </div>
+    </div>
+
+    <div class="sec-head reveal" style="margin-top:48px">
+      <h2 style="font-size:1.35rem">Where the commits landed, by language</h2>
+      <p class="sec-sub">Weighted by commit count in each repository's primary language.</p>
+    </div>
+    <div class="reveal">
+      <div class="langbar" id="langbar"></div>
+      <div class="langkeys" id="langkeys"></div>
+    </div>
+  </div>
+</section>
+
+<section id="timeline">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="sec-num">03 / CHRONOLOGY</span>
+      <h2>Everything, in order</h2>
+      <p class="sec-sub">
+        Every repository with eight or more commits, placed in the year work on it started. Career
+        milestones are marked in line. Bars are scaled to commit count.
+      </p>
+    </div>
+    <div class="tl" id="timeline-list"></div>
+  </div>
+</section>
+
+<section id="experience">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="sec-num">04 / EXPERIENCE</span>
+      <h2>Where I've worked</h2>
+    </div>
+    <div class="xp">
+
+      <article class="xp-item reveal">
+        <div class="xp-when">2025 — now<span>Stockholm, Sweden<br>On-site / Remote</span></div>
+        <div>
+          <h3>1st Founding Engineer</h3>
+          <div class="org">Ivy</div>
+          <p>
+            A .NET AI startup redefining how people build business apps inside the Microsoft ecosystem —
+            <strong>the ease and fun of Lovable with the full power of C#</strong>.
+          </p>
+          <p>
+            I own the codebase, product engineering, AI modelling and project planning, and I lead the
+            development team. Ivy-Framework is at <strong>434 stars</strong> and Ivy-Tendril at
+            <strong>198</strong>; between them I've written over <strong>5,600 commits</strong>. We're
+            currently raising a <strong>$5M seed round</strong>.
+          </p>
+        </div>
+      </article>
+
+      <article class="xp-item reveal">
+        <div class="xp-when">2023 — now<span>Europe, Remote</span></div>
+        <div>
+          <h3>Founder &amp; CEO / CTO</h3>
+          <div class="org">SpaceCorps Technology OÜ</div>
+          <p>
+            Identified a gap in the market for a <strong>3D MMO RPG open-source browser game</strong>,
+            and founded a company to build it.
+          </p>
+          <p>
+            Recruited and manage an international team of six — designers and full-stack developers.
+            Built the original WebGL prototype myself and still architect the rendering and networking
+            layers. <strong>Launching summer 2026.</strong>
+          </p>
+        </div>
+      </article>
+
+      <article class="xp-item reveal">
+        <div class="xp-when">2024 — 2025<span>Stockholm, Sweden<br>On-site / Remote</span></div>
+        <div>
+          <h3>Solutions Architect / Senior Full-stack Engineer</h3>
+          <div class="org">Scania</div>
+          <p>
+            Modernised the internal platform used to deliver trucks, improving user experience and
+            boosting sales.
+          </p>
+          <p>
+            Proposed and implemented new workflows and algorithms as part of the platform's
+            <strong>migration to AWS</strong>.
+          </p>
+        </div>
+      </article>
+
+      <article class="xp-item reveal">
+        <div class="xp-when">2023 — 2024<span>Tallinn, Estonia<br>On-site / Remote</span></div>
+        <div>
+          <h3>Full-stack Software Engineer</h3>
+          <div class="org">Nixor EE AS</div>
+          <p>
+            Engineered and deployed tailored SaaS solutions for Estonian businesses, enhancing POS systems
+            for major distributors including <strong>Coop, Stockmann Group and Selver</strong>.
+          </p>
+          <p>
+            Improved efficiency and reliability through custom Odoo modules and robust payment
+            integrations, and resolved critical transaction bugs affecting retail across Estonia.
+          </p>
+        </div>
+      </article>
+
+      <article class="xp-item reveal">
+        <div class="xp-when">2022 — 2023<span>Tartu, Estonia<br>On-site</span></div>
+        <div>
+          <h3>Full-stack Software Engineer &amp; Researcher</h3>
+          <div class="org">University of Tartu — Institute of Technology</div>
+          <p>
+            Built scientific software that makes complex calculations legible to scientists, bridging
+            theoretical and experimental physics in <strong>molecular dynamics and quantum simulation,
+            in collaboration with CERN</strong>.
+          </p>
+          <p>
+            <strong>Main author</strong> of "An Online Tool for Thermal-Field Emission Calculations from
+            Metal and Semiconducting Emitters", advancing thermal-field emission research.
+          </p>
+        </div>
+      </article>
+
+      <article class="xp-item reveal">
+        <div class="xp-when">2019 — 2024<span>Tallinn, Estonia<br>Remote</span></div>
+        <div>
+          <h3>Private Tutor &amp; Teacher, Natural Sciences</h3>
+          <div class="org">University of Tartu / Tallinn</div>
+          <p>
+            Five years of one-on-one, group and remote tutoring in the natural sciences. Guided a large
+            number of students to markedly better academic results.
+          </p>
+          <p>
+            <strong>Teaching is still the part I love most</strong> — it's why mentoring is central to
+            how I run an engineering team.
+          </p>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<section id="education">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="sec-num">05 / EDUCATION &amp; RESEARCH</span>
+      <h2>How I got here</h2>
+    </div>
+    <div class="cols">
+      <div class="card reveal">
+        <h3>Full-stack C# Developer</h3>
+        <div class="meta">SALT 🧂 School of Applied Technology · 2024</div>
+        <p>
+          Intensive three-month full-stack programme built around <strong>TDD, mob programming and
+          applied learning</strong>. Solid foundation in C#, ASP.NET MVC, Blazor, .NET Core, Entity
+          Framework Core, .NET Framework and MSSQL.
+        </p>
+        <p>
+          Also covered the modern front-end stack — React, Tailwind, TypeScript — plus SOLID design
+          principles, Agile methodologies, CI/CD and team leadership.
+        </p>
+      </div>
+
+      <div class="card reveal">
+        <h3>BSc Chemistry</h3>
+        <div class="meta">University of Tartu · 2019 — 2024</div>
+        <p>
+          A chemistry degree that turned into a computation degree: machine learning and physics
+          alongside rigorous coursework in <strong>C, Assembler and Java</strong>.
+        </p>
+        <p>
+          Built my own ML models for molecular dynamics using Gaussian approximations, Monte-Carlo
+          simulation, neural networks and extreme gradient boosting. Used COMSOL, Modelica and Fortran to
+          simulate complex physical processes and optimise experimental design.
+        </p>
+      </div>
+
+      <div class="card paper reveal">
+        <h3>An Online Tool for Thermal-Field Emission Calculations from Metal and Semiconducting Emitters</h3>
+        <div class="meta">IEEE IVNC 2023 · first author</div>
+        <p>
+          <strong>M. Rinne</strong>, S. Barranco Cárceles, V. Zadin, A. Mavalankar, I. Underwood,
+          A. Kyritsakis — 36th International Vacuum Nanoelectronics Conference.
+        </p>
+        <p>
+          <a href="https://doi.org/10.1109/IVNC57695.2023.10188950" target="_blank" rel="noopener">
+            doi:10.1109/IVNC57695.2023.10188950</a> ·
+          <a href="https://github.com/AndKyr/GETELEC" target="_blank" rel="noopener">GETELEC on GitHub</a>
+        </p>
+      </div>
+
+      <div class="card reveal">
+        <h3>Languages</h3>
+        <div class="meta">Human and otherwise</div>
+        <p>
+          <strong>English</strong> — native · <strong>Estonian</strong> — fluent ·
+          <strong>Russian</strong> — fluent · <strong>C#</strong> — native.
+        </p>
+        <p>
+          Estonian by origin, based in Stockholm, working across European teams and time zones.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="sec-num">06 / TOOLKIT</span>
+      <h2>The stack</h2>
+      <p class="sec-sub">Highlighted items are what the last three years of commits actually ran on.</p>
+    </div>
+    <div class="skills">
+      <div class="skill-group reveal">
+        <h4>Languages</h4>
+        <div class="tags">
+          <span class="tag hot">C#</span><span class="tag hot">TypeScript</span>
+          <span class="tag hot">Rust</span><span class="tag">JavaScript</span>
+          <span class="tag">Python</span><span class="tag">C / C++</span>
+          <span class="tag">Java</span><span class="tag">Fortran</span>
+          <span class="tag">Assembler</span><span class="tag">MATLAB</span>
+          <span class="tag">SQL</span><span class="tag">Dart</span>
+        </div>
+      </div>
+      <div class="skill-group reveal">
+        <h4>Backend</h4>
+        <div class="tags">
+          <span class="tag hot">.NET</span><span class="tag hot">ASP.NET MVC / WebAPI</span>
+          <span class="tag hot">Entity Framework Core</span><span class="tag">Dapper</span>
+          <span class="tag">Node.js</span><span class="tag">REST / HTTP / JSON / XML</span>
+          <span class="tag">SQL Server</span><span class="tag">PostgreSQL</span>
+          <span class="tag">MySQL / HeidiSQL</span><span class="tag">FastAPI</span>
+        </div>
+      </div>
+      <div class="skill-group reveal">
+        <h4>Frontend</h4>
+        <div class="tags">
+          <span class="tag hot">React</span><span class="tag hot">Tailwind</span>
+          <span class="tag hot">WebGL / three.js</span><span class="tag">TanStack</span>
+          <span class="tag">Angular</span><span class="tag">HTML5 / CSS3</span>
+          <span class="tag">DaisyUI</span><span class="tag">Webpack / Vite</span>
+          <span class="tag">WebGPU</span>
+        </div>
+      </div>
+      <div class="skill-group reveal">
+        <h4>AI &amp; Scientific Computing</h4>
+        <div class="tags">
+          <span class="tag hot">LLM code generation</span><span class="tag hot">Agentic tooling</span>
+          <span class="tag">Neural networks</span><span class="tag">XGBoost</span>
+          <span class="tag">Monte-Carlo simulation</span><span class="tag">Gaussian approximations</span>
+          <span class="tag">Molecular dynamics</span><span class="tag">TensorFlow</span>
+          <span class="tag">COMSOL</span><span class="tag">Modelica</span>
+        </div>
+      </div>
+      <div class="skill-group reveal">
+        <h4>Practice &amp; Tooling</h4>
+        <div class="tags">
+          <span class="tag hot">TDD / SOLID</span><span class="tag hot">CI/CD</span>
+          <span class="tag hot">Git / GitHub</span><span class="tag">Docker</span>
+          <span class="tag">Mob programming</span><span class="tag">Agile</span>
+          <span class="tag">Jira / Confluence</span><span class="tag">xUnit</span>
+          <span class="tag">Jest / Vitest</span><span class="tag">Odoo</span>
+          <span class="tag">AWS</span><span class="tag">Windows / Linux</span>
+        </div>
+      </div>
+      <div class="skill-group reveal">
+        <h4>Leadership</h4>
+        <div class="tags">
+          <span class="tag hot">Team leadership</span><span class="tag hot">Mentoring</span>
+          <span class="tag">Product engineering</span><span class="tag">Fundraising</span>
+          <span class="tag">Hiring</span><span class="tag">Solutions architecture</span>
+          <span class="tag">Teaching</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap foot">
+    <div class="foot-links">
+      <a href="https://github.com/rorychatt" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://www.linkedin.com/in/mikael-rinne/" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="mailto:pavel.rinne@gmail.com">pavel.rinne@gmail.com</a>
+      <a href="https://ivy.app" target="_blank" rel="noopener">ivy.app</a>
+    </div>
+    <div class="foot-note" id="foot-note"></div>
+  </div>
+</footer>
+
+<script src="assets/data.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>

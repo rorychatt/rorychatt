@@ -1,3 +1,41 @@
-# Hi there 👋
+# Hi, I'm Mikael Rinne 👋
 
-I'm Mikael Rinne, a passionate developer from Estonia, living in Sweden
+**1st Founding Engineer [@Ivy-Interactive](https://github.com/Ivy-Interactive)** · **Founder & CEO [@SpaceCorps](https://github.com/SpaceCorps)**
+
+Full-stack engineer from Estonia, based in Stockholm. Background in machine learning, chemistry and physics — first-author on an IEEE IVNC 2023 paper written with CERN collaborators. These days I build .NET/AI developer tooling at Ivy and a WebGL MMO at SpaceCorps.
+
+🌐 **[rorychatt.github.io](https://rorychatt.github.io/)** — portfolio, three years of git history, and a live contribution heatmap
+
+```
+C#           ████████████████████████████████████  68.5%
+TypeScript   ████████████                          22.8%
+Rust         ███                                    6.5%
+```
+
+**Currently:** Ivy Framework (434 ★) · Ivy Tendril (198 ★) · SpaceCorps, launching summer 2026
+
+---
+
+<details>
+<summary>About this repository</summary>
+
+This repo is both my GitHub profile README and the source of my portfolio site, deployed to GitHub Pages.
+
+```
+index.html          the whole page
+assets/style.css    styles
+assets/app.js       renderers: heatmap, project cards, timeline, language bar
+assets/data.js      generated — GitHub contribution data
+scripts/build-data.py   regenerates assets/data.js from the GitHub API
+scripts/projects.json   curated top-project narratives (commit counts come from the API)
+```
+
+To refresh the git history shown on the site:
+
+```bash
+python3 scripts/build-data.py   # needs the `gh` CLI, authenticated
+```
+
+No framework, no build step, no dependencies — it's three static files.
+
+</details>

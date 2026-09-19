@@ -1,0 +1,122 @@
+[
+  {
+    "full": "Ivy-Interactive/Ivy-Framework",
+    "name": "Ivy Framework",
+    "lang": "C#",
+    "desc": "The ultimate framework for building internal tools with LLM code generation \u2014 front-end and back-end unified into a single C# codebase.",
+    "role": "Founding engineer and top contributor. Own the core codebase, product engineering and the AI code-generation model that turns prompts into working C# apps.",
+    "url": "https://github.com/Ivy-Interactive/Ivy-Framework",
+    "stars": 434,
+    "period": "2025 \u2013 now"
+  },
+  {
+    "full": "Ivy-Interactive/Ivy-Tendril",
+    "name": "Ivy Tendril",
+    "lang": "C#",
+    "desc": "What replaces your IDE in an agentic era \u2014 a developer tool built for when agents write 99% of the code and your job is knowing what good looks like.",
+    "role": "Led design and implementation from the first commit. 2,000 commits and 650+ PRs in under six months.",
+    "url": "https://github.com/Ivy-Interactive/Ivy-Tendril",
+    "stars": 198,
+    "period": "2026"
+  },
+  {
+    "full": "rorychatt/SpaceCorps2",
+    "name": "SpaceCorps 2",
+    "lang": "TypeScript",
+    "desc": "WebGL-based 3D MMO RPG that runs in the browser \u2014 client and server. The project that became a company.",
+    "role": "Founder & CEO. Spotted the gap for an open-source browser MMO, built the prototype solo, then recruited and led an international team of six.",
+    "url": "https://github.com/rorychatt/SpaceCorps2",
+    "stars": 1,
+    "period": "2023 \u2013 2024"
+  },
+  {
+    "full": "SpaceCorps/SpaceCorps-Front",
+    "name": "SpaceCorps Front",
+    "lang": "TypeScript",
+    "desc": "The production front-end for SpaceCorps \u2014 three.js/WebGL rendering, real-time multiplayer state, and the full game client shell.",
+    "role": "Architected the rendering and networking layers, and ran the team delivering toward the 2026 launch.",
+    "url": "https://github.com/SpaceCorps/SpaceCorps-Front",
+    "stars": 1,
+    "period": "2024 \u2013 2025"
+  },
+  {
+    "full": "SpaceCorps/GrowthHack",
+    "name": "GrowthHack",
+    "lang": "TypeScript",
+    "desc": "Growth and distribution tooling built at SpaceCorps \u2014 424 commits in three months.",
+    "role": "Built end to end, from data pipeline through to the operator-facing UI.",
+    "url": "https://github.com/SpaceCorps/GrowthHack",
+    "stars": 0,
+    "period": "2026"
+  },
+  {
+    "full": "Ivy-Interactive/Rusty-Framework",
+    "name": "Rusty Framework",
+    "lang": "Rust",
+    "desc": "Build full-stack web applications in pure Rust \u2014 a direct port of Ivy-Framework to a systems language.",
+    "role": "Ported the framework's architecture into Rust to test how far the single-language full-stack idea travels outside .NET.",
+    "url": "https://github.com/Ivy-Interactive/Rusty-Framework",
+    "stars": 3,
+    "period": "2026"
+  },
+  {
+    "full": "rorychatt/rustmc-server",
+    "name": "RustMC Server",
+    "lang": "Rust",
+    "desc": "A multi-threaded Minecraft server written in Rust with Paper plugin compatibility.",
+    "role": "Side project turned performance study: concurrency, protocol implementation, and binary compatibility with an existing plugin ecosystem.",
+    "url": "https://github.com/rorychatt/rustmc-server",
+    "stars": 0,
+    "period": "2026"
+  },
+  {
+    "full": "Ivy-Interactive/Ivy-Examples",
+    "name": "Ivy Examples",
+    "lang": "C#",
+    "desc": "Community-created full-stack C# application demos built on Ivy-Framework.",
+    "role": "Curate and author the reference applications that show developers what the framework can do.",
+    "url": "https://github.com/Ivy-Interactive/Ivy-Examples",
+    "stars": 12,
+    "period": "2025 \u2013 2026"
+  },
+  {
+    "full": "rorychatt/Ivy-Command-Center",
+    "name": "Ivy Command Center",
+    "lang": "C#",
+    "desc": "Permission-based access control for Ivy apps.",
+    "role": "Designed and shipped the authorization layer \u2014 roles, policies and per-app permission scoping.",
+    "url": "https://github.com/rorychatt/Ivy-Command-Center",
+    "stars": 0,
+    "period": "2026"
+  },
+  {
+    "full": "DFlats/timup.pro",
+    "name": "timup.pro",
+    "lang": "C#",
+    "desc": "Production .NET web platform shipped with a team during the SALT full-stack programme.",
+    "role": "Team build under mob-programming and TDD discipline \u2014 ASP.NET, EF Core, CI/CD, deployed live.",
+    "url": "https://github.com/DFlats/timup.pro",
+    "stars": 1,
+    "period": "2024"
+  },
+  {
+    "full": "rorychatt/KeepIn",
+    "name": "KeepIn",
+    "lang": "C#",
+    "desc": "Inventory, messaging and handling system for e-commerce businesses, with 3D storage visualisation.",
+    "role": "Full-stack build: C# API, React front-end, and a WebGL view of physical warehouse space.",
+    "url": "https://github.com/rorychatt/KeepIn",
+    "stars": 1,
+    "period": "2024"
+  },
+  {
+    "full": "AndKyr/GETELEC",
+    "name": "GETELEC",
+    "lang": "Fortran",
+    "desc": "General Tool for Electron Emission Calculations \u2014 computing emission current and Nottingham-effect heat, used in collaboration with CERN.",
+    "role": "Built the online interface bridging theoretical and experimental physics. Basis of my first-author IEEE IVNC 2023 paper.",
+    "url": "https://github.com/AndKyr/GETELEC",
+    "stars": 9,
+    "period": "2022 \u2013 2023"
+  }
+]
