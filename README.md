@@ -2,17 +2,9 @@
 
 **1st Founding Engineer [@Ivy-Interactive](https://github.com/Ivy-Interactive)** · **Founder & CEO [@SpaceCorps](https://github.com/SpaceCorps)**
 
-Full-stack engineer from Estonia, based in Stockholm. Background in machine learning, chemistry and physics — first-author on an IEEE IVNC 2023 paper written with CERN collaborators. These days I build .NET/AI developer tooling at Ivy and a WebGL MMO at SpaceCorps.
+Full-stack engineer from Estonia, based in Stockholm. Background in machine learning, chemistry and physics — first-author on an IEEE IVNC 2023 paper written with CERN collaborators. These days I build .NET/AI/Rust developer tooling at Ivy.
 
 🌐 **[rorychatt.github.io/rorychatt](https://rorychatt.github.io/rorychatt/)** — portfolio, three years of git history, and a live contribution heatmap
-
-```
-C#           ████████████████████████████████████  68.5%
-TypeScript   ████████████                          22.8%
-Rust         ███                                    6.5%
-```
-
-**Currently:** Ivy Framework (434 ★) · Ivy Tendril (198 ★) · SpaceCorps, launching summer 2026
 
 ---
 
