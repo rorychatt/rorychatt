@@ -123,8 +123,8 @@
     "full": "SpaceCorps/open-apple-models",
     "name": "open-apple-models",
     "lang": "Swift",
-    "desc": "Real tool calling for Apple's on-device Foundation Models \u2014 NPC dialogue, AI decisions and content generation for games on iOS, iPadOS, macOS and visionOS 27, with no API keys or server costs.",
-    "role": "In our tests Apple's own fm serve returned 0 tool calls in 54 requests, so I built per-step tool steering, a Swift package, the oam CLI, an OpenAI-compatible server and a JSON-RPC protocol with a C ABI for game engines.",
+    "desc": "Real tool calling for Apple's on-device Foundation Models: NPC dialogue, AI decisions and content generation for games on iOS, iPadOS, macOS and visionOS 27, with no API keys or server costs.",
+    "role": "In our tests Apple's own fm serve returned 0 tool calls in 54 requests, so I built per-step tool steering, a Swift package, the oam CLI, an OpenAI-compatible server and a JSON-RPC protocol with a C ABI for game engines. Pre-release: no tagged release yet.",
     "url": "https://github.com/SpaceCorps/open-apple-models",
     "stars": 0,
     "period": "2026"

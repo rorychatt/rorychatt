@@ -69,7 +69,8 @@ Contact: mikael@spacecorpstechnology.com
 - [open-apple-models](https://github.com/SpaceCorps/open-apple-models) (Swift, MIT, 2026): tool
   calling for Apple's on-device Foundation Models (iOS, iPadOS, macOS, visionOS 27). NPC dialogue,
   AI decisions and content generation for games; Swift package, `oam` CLI, OpenAI-compatible
-  server, and a JSON-RPC protocol over stdio or a C ABI for game engines. Docs:
+  server, and a JSON-RPC protocol over stdio or a C ABI for game engines. Pre-release, no tagged
+  release yet. Docs:
   https://spacecorps.github.io/open-apple-models/
 - [open-android-models](https://github.com/SpaceCorps/open-android-models) (Kotlin, MIT, 2026):
   the Android sibling on Gemini Nano via the ML Kit GenAI Prompt API, speaking the same JSON-RPC
