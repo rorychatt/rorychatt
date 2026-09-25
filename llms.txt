@@ -31,10 +31,11 @@ Contact: mikael@spacecorpstechnology.com
 ## Technical focus
 
 - **Languages:** C#, TypeScript, Rust, JavaScript, Python, SQL, WGSL/GLSL, PowerShell/Bash,
-  C/C++, Java, Fortran, Assembler, MATLAB, Dart
+  C/C++, Java, Fortran, Assembler, MATLAB, Dart, Swift, Kotlin
 - **AI engineering:** RAG pipelines, embeddings and vector search, agentic tooling, MCP,
   Anthropic and OpenAI APIs, Microsoft.Extensions.AI, Semantic Kernel, Qdrant/pgvector,
-  structured output and tool calling, prompt and eval harnesses
+  structured output and tool calling, prompt and eval harnesses, on-device models (Apple
+  Foundation Models, Gemini Nano)
 - **Backend:** .NET 9, ASP.NET MVC/WebAPI, Entity Framework Core, SignalR, PostgreSQL, Dapper,
   .NET Aspire, Node.js, FastAPI, SQL Server, Redis, ANTLR
 - **Rust & systems:** Tokio, serde, Cargo workspaces, axum, tracing, crossbeam, criterion,
@@ -65,6 +66,14 @@ Contact: mikael@spacecorpstechnology.com
   client and server.
 - [GETELEC](https://github.com/AndKyr/GETELEC): thermal-field emission calculation tool behind
   the IVNC 2023 paper.
+- [open-apple-models](https://github.com/SpaceCorps/open-apple-models) (Swift, MIT, 2026): tool
+  calling for Apple's on-device Foundation Models (iOS, iPadOS, macOS, visionOS 27). NPC dialogue,
+  AI decisions and content generation for games; Swift package, `oam` CLI, OpenAI-compatible
+  server, and a JSON-RPC protocol over stdio or a C ABI for game engines.
+- [open-android-models](https://github.com/SpaceCorps/open-android-models) (Kotlin, MIT, 2026):
+  the Android sibling on Gemini Nano via the ML Kit GenAI Prompt API, speaking the same JSON-RPC
+  protocol over JNI. Pre-release: tested on the JVM and against a proxy model, not yet on a
+  Gemini Nano device.
 
 ## Links
 

@@ -78,7 +78,8 @@
         "C#", ".NET", "ASP.NET Core", "Entity Framework Core", "TypeScript", "React", "Rust",
         "Tokio", "WebGL", "three.js", "WebGPU", "Retrieval-Augmented Generation",
         "Large language models", "Model Context Protocol", "Vector databases", "Machine learning",
-        "Molecular dynamics", "Monte Carlo simulation", "Solutions architecture"
+        "Molecular dynamics", "Monte Carlo simulation", "Solutions architecture",
+        "Swift", "Kotlin", "On-device language models"
       ],
       "sameAs": [
         "https://github.com/rorychatt",
@@ -162,9 +163,9 @@
     </div>
     <div class="stats" id="stats">
       <!-- BEGIN stats -->
-      <div class="stat"><b data-to="25734">25,734</b><span>Contributions since 2023</span></div>
-      <div class="stat"><b data-to="9012">9,012</b><span>Commits in top projects</span></div>
-      <div class="stat"><b data-to="97">97</b><span>Repositories touched</span></div>
+      <div class="stat"><b data-to="26860">26,860</b><span>Contributions since 2023</span></div>
+      <div class="stat"><b data-to="9061">9,061</b><span>Commits in top projects</span></div>
+      <div class="stat"><b data-to="130">130</b><span>Repositories touched</span></div>
       <div class="stat"><b data-to="660">660</b><span>Stars on shipped work</span></div>
       <div class="stat"><b data-to="3">3</b><span>Years of history shown</span></div>
       <!-- END stats -->
@@ -285,6 +286,22 @@
         <p class="role">Built the online interface bridging theoretical and experimental physics. Basis of my first-author IEEE IVNC 2023 paper.</p>
         <div class="proj-meta"><span class="pill commits">68 commits</span><span class="pill star">★ 9</span><span class="pill lang" style="--d:#ec4899">Fortran</span><span class="pill">2022 – 2023</span></div>
       </article>
+      <article class="proj reveal">
+        <div class="proj-top"><span class="rank">13</span>
+        <h3><a href="https://github.com/SpaceCorps/open-apple-models" target="_blank" rel="noopener">open-apple-models</a></h3></div>
+        <div class="slug">SpaceCorps/open-apple-models</div>
+        <p class="desc">Real tool calling for Apple&#x27;s on-device Foundation Models — NPC dialogue, AI decisions and content generation for games on iOS, iPadOS, macOS and visionOS 27, with no API keys or server costs.</p>
+        <p class="role">Measured the platform first: Apple&#x27;s own fm serve returned 0 tool calls in 54 requests. Then built per-step tool steering, a Swift package, the oam CLI, an OpenAI-compatible server and a JSON-RPC protocol with a C ABI for game engines.</p>
+        <div class="proj-meta"><span class="pill commits">25 commits</span><span class="pill lang" style="--d:#f05138">Swift</span><span class="pill">2026</span></div>
+      </article>
+      <article class="proj reveal">
+        <div class="proj-top"><span class="rank">14</span>
+        <h3><a href="https://github.com/SpaceCorps/open-android-models" target="_blank" rel="noopener">open-android-models</a></h3></div>
+        <div class="slug">SpaceCorps/open-android-models</div>
+        <p class="desc">The Android sibling on Gemini Nano via ML Kit&#x27;s GenAI Prompt API. Same concepts and same JSON-RPC protocol, so a game engine can inject either backend per platform.</p>
+        <p class="role">Gemini Nano has no native tool calling yet, so I built a validated step-envelope tool loop in Kotlin, plus a JNI entry point for native engines. Pre-release: tested on the JVM and against Apple&#x27;s model as a proxy, not yet on a Gemini Nano device.</p>
+        <div class="proj-meta"><span class="pill commits">24 commits</span><span class="pill lang" style="--d:#a97bff">Kotlin</span><span class="pill">2026</span></div>
+      </article>
       <!-- END projects -->
     </div>
   </div>
@@ -340,15 +357,16 @@
     </div>
     <div class="tl" id="timeline-list">
       <!-- BEGIN timeline -->
-      <div class="tl-year">2026<small>17 repos started · 4,095 commits</small></div>
+      <div class="tl-year">2026<small>25 repos started · 5,911 commits</small></div>
       <div class="tl-items">
         <div class="tl-row"><div class="tl-name"><span class="org">Ivy-Interactive/</span><a href="https://github.com/Ivy-Interactive/Ivy-Tendril" target="_blank" rel="noopener">Ivy-Tendril</a><span class="tl-tag" style="border-color:#8b5cf655;color:#8b5cf6">C#</span></div><div class="tl-right"><span class="tl-bar"><i style="width:55.1980198019802%"></i></span><span class="tl-n">2,007</span></div></div>
+        <div class="tl-row"><div class="tl-name"><span class="org">Ivy-Interactive/</span><a href="https://github.com/Ivy-Interactive/Ivy-Tendril-V2" target="_blank" rel="noopener">Ivy-Tendril-V2</a><span class="tl-tag" style="border-color:#3b82f655;color:#3b82f6">TypeScript</span></div><div class="tl-right"><span class="tl-bar"><i style="width:47.002200220022%"></i></span><span class="tl-n">1,709</span></div></div>
         <div class="tl-row"><div class="tl-name"><span class="org">SpaceCorps/</span><a href="https://github.com/SpaceCorps/GrowthHack" target="_blank" rel="noopener">GrowthHack</a><span class="tl-tag" style="border-color:#3b82f655;color:#3b82f6">TypeScript</span></div><div class="tl-right"><span class="tl-bar"><i style="width:11.66116611661166%"></i></span><span class="tl-n">424</span></div></div>
         <div class="tl-row"><div class="tl-name"><span class="org">Ivy-Interactive/</span><a href="https://github.com/Ivy-Interactive/Rusty-Framework" target="_blank" rel="noopener">Rusty-Framework</a><span class="tl-tag" style="border-color:#3b82f655;color:#3b82f6">TypeScript</span></div><div class="tl-right"><span class="tl-bar"><i style="width:10.6985698569857%"></i></span><span class="tl-n">389</span></div></div>
         <div class="tl-row"><div class="tl-name"><span class="org">rorychatt/</span><a href="https://github.com/rorychatt/rustmc-server" target="_blank" rel="noopener">rustmc-server</a><span class="tl-tag" style="border-color:#f9731655;color:#f97316">Rust</span></div><div class="tl-right"><span class="tl-bar"><i style="width:10.506050605060507%"></i></span><span class="tl-n">382</span></div></div>
         <div class="tl-row"><div class="tl-name"><span class="org">rorychatt/</span><a href="https://github.com/rorychatt/Ivy-Command-Center" target="_blank" rel="noopener">Ivy-Command-Center</a><span class="tl-tag" style="border-color:#8b5cf655;color:#8b5cf6">C#</span></div><div class="tl-right"><span class="tl-bar"><i style="width:8.690869086908691%"></i></span><span class="tl-n">316</span></div></div>
         <div class="tl-row"><div class="tl-name"><span class="org">rorychatt/</span><a href="https://github.com/rorychatt/gitpub" target="_blank" rel="noopener">gitpub</a><span class="tl-tag" style="border-color:#f9731655;color:#f97316">Rust</span></div><div class="tl-right"><span class="tl-bar"><i style="width:3.575357535753575%"></i></span><span class="tl-n">130</span></div></div>
-        <div class="tl-row"><div class="tl-name"><span class="org">SpaceCorps/</span><a href="https://github.com/SpaceCorps/open-glass" target="_blank" rel="noopener">open-glass</a><span class="tl-tag" style="border-color:#3b82f655;color:#3b82f6">TypeScript</span></div><div class="tl-right"><span class="tl-bar"><i style="width:3.1903190319031904%"></i></span><span class="tl-n">116</span></div></div>
+        <div class="tl-row"><div class="tl-name"><span class="org">SpaceCorps/</span><a href="https://github.com/SpaceCorps/open-glass" target="_blank" rel="noopener">open-glass</a><span class="tl-tag" style="border-color:#3b82f655;color:#3b82f6">TypeScript</span></div><div class="tl-right"><span class="tl-bar"><i style="width:3.2453245324532456%"></i></span><span class="tl-n">118</span></div></div>
         <div class="tl-row"><div class="tl-name"><span class="org">Ivy-Interactive/</span><a href="https://github.com/Ivy-Interactive/Ivy.NativeJsonDiff" target="_blank" rel="noopener">Ivy.NativeJsonDiff</a><span class="tl-tag" style="border-color:#8b5cf655;color:#8b5cf6">C#</span></div><div class="tl-right"><span class="tl-bar"><i style="width:3%"></i></span><span class="tl-n">68</span></div></div>
         <div class="tl-row"><div class="tl-name"><span class="org">Ivy-Interactive/</span><a href="https://github.com/Ivy-Interactive/Ivy.Docs.Compiler" target="_blank" rel="noopener">Ivy.Docs.Compiler</a><span class="tl-tag" style="border-color:#f9731655;color:#f97316">Rust</span></div><div class="tl-right"><span class="tl-bar"><i style="width:3%"></i></span><span class="tl-n">66</span></div></div>
         <div class="tl-row"><div class="tl-name"><span class="org">SpaceCorps/</span><a href="https://github.com/SpaceCorps/brainwares" target="_blank" rel="noopener">brainwares</a><span class="tl-tag" style="border-color:#f9731655;color:#f97316">Rust</span></div><div class="tl-right"><span class="tl-bar"><i style="width:3%"></i></span><span class="tl-n">41</span></div></div>
@@ -356,9 +374,16 @@
         <div class="tl-row"><div class="tl-name"><span class="org">Ivy-Interactive/</span><a href="https://github.com/Ivy-Interactive/Rustino" target="_blank" rel="noopener">Rustino</a><span class="tl-tag" style="border-color:#f9731655;color:#f97316">Rust</span></div><div class="tl-right"><span class="tl-bar"><i style="width:3%"></i></span><span class="tl-n">32</span></div></div>
         <div class="tl-row"><div class="tl-name"><span class="org">Ivy-Interactive/</span><a href="https://github.com/Ivy-Interactive/Pr-Cost-Calculator" target="_blank" rel="noopener">Pr-Cost-Calculator</a><span class="tl-tag" style="border-color:#3b82f655;color:#3b82f6">TypeScript</span></div><div class="tl-right"><span class="tl-bar"><i style="width:3%"></i></span><span class="tl-n">29</span></div></div>
         <div class="tl-row"><div class="tl-name"><span class="org">SpaceCorps/</span><a href="https://github.com/SpaceCorps/web-demo-generator" target="_blank" rel="noopener">web-demo-generator</a><span class="tl-tag" style="border-color:#3b82f655;color:#3b82f6">TypeScript</span></div><div class="tl-right"><span class="tl-bar"><i style="width:3%"></i></span><span class="tl-n">26</span></div></div>
+        <div class="tl-row"><div class="tl-name"><span class="org">SpaceCorps/</span><a href="https://github.com/SpaceCorps/open-apple-models" target="_blank" rel="noopener">open-apple-models</a><span class="tl-tag" style="border-color:#f0513855;color:#f05138">Swift</span></div><div class="tl-right"><span class="tl-bar"><i style="width:3%"></i></span><span class="tl-n">25</span></div></div>
+        <div class="tl-row"><div class="tl-name"><span class="org">SpaceCorps/</span><a href="https://github.com/SpaceCorps/open-android-models" target="_blank" rel="noopener">open-android-models</a><span class="tl-tag" style="border-color:#a97bff55;color:#a97bff">Kotlin</span></div><div class="tl-right"><span class="tl-bar"><i style="width:3%"></i></span><span class="tl-n">24</span></div></div>
+        <div class="tl-row"><div class="tl-name"><span class="org">SpaceCorps/</span><a href="https://github.com/SpaceCorps/spacecorps.github.io" target="_blank" rel="noopener">spacecorps.github.io</a><span class="tl-tag" style="border-color:#ef444455;color:#ef4444">HTML</span></div><div class="tl-right"><span class="tl-bar"><i style="width:3%"></i></span><span class="tl-n">18</span></div></div>
+        <div class="tl-row"><div class="tl-name"><span class="org">SpaceCorps/</span><a href="https://github.com/SpaceCorps/Sliplane-Cli" target="_blank" rel="noopener">Sliplane-Cli</a><span class="tl-tag" style="border-color:#f9731655;color:#f97316">Rust</span></div><div class="tl-right"><span class="tl-bar"><i style="width:3%"></i></span><span class="tl-n">14</span></div></div>
         <div class="tl-row"><div class="tl-name"><span class="org">rorychatt/</span><a href="https://github.com/rorychatt/Rusty-Framework" target="_blank" rel="noopener">Rusty-Framework</a></div><div class="tl-right"><span class="tl-bar"><i style="width:3%"></i></span><span class="tl-n">12</span></div></div>
         <div class="tl-row"><div class="tl-name"><span class="org">Ivy-Interactive/</span><a href="https://github.com/Ivy-Interactive/edit-counter" target="_blank" rel="noopener">edit-counter</a><span class="tl-tag" style="border-color:#f9731655;color:#f97316">Rust</span></div><div class="tl-right"><span class="tl-bar"><i style="width:3%"></i></span><span class="tl-n">12</span></div></div>
         <div class="tl-row"><div class="tl-name"><span class="org">Ivy-Interactive/</span><a href="https://github.com/Ivy-Interactive/Ivy-Nuget-Stats" target="_blank" rel="noopener">Ivy-Nuget-Stats</a><span class="tl-tag" style="border-color:#8b5cf655;color:#8b5cf6">C#</span></div><div class="tl-right"><span class="tl-bar"><i style="width:3%"></i></span><span class="tl-n">9</span></div></div>
+        <div class="tl-row"><div class="tl-name"><span class="org">SpaceCorps/</span><a href="https://github.com/SpaceCorps/Notify-Cli" target="_blank" rel="noopener">Notify-Cli</a><span class="tl-tag" style="border-color:#f9731655;color:#f97316">Rust</span></div><div class="tl-right"><span class="tl-bar"><i style="width:3%"></i></span><span class="tl-n">8</span></div></div>
+        <div class="tl-row"><div class="tl-name"><span class="org">SpaceCorps/</span><a href="https://github.com/SpaceCorps/Samsung-Artmode-Cli" target="_blank" rel="noopener">Samsung-Artmode-Cli</a><span class="tl-tag" style="border-color:#f9731655;color:#f97316">Rust</span></div><div class="tl-right"><span class="tl-bar"><i style="width:3%"></i></span><span class="tl-n">8</span></div></div>
+        <div class="tl-row"><div class="tl-name"><span class="org">SpaceCorps/</span><a href="https://github.com/SpaceCorps/namecheap-cli" target="_blank" rel="noopener">namecheap-cli</a><span class="tl-tag" style="border-color:#f9731655;color:#f97316">Rust</span></div><div class="tl-right"><span class="tl-bar"><i style="width:3%"></i></span><span class="tl-n">8</span></div></div>
       </div>
       <div class="tl-year">2025<small>13 repos started · 4,384 commits</small></div>
       <div class="tl-row"><div class="tl-name"><span class="tl-tag" style="border-color:rgba(240,171,252,.4);color:#f0abfc">milestone</span><span style="color:#e8edf5">Became 1st Founding Engineer at Ivy</span></div><div class="tl-right"></div></div>
@@ -377,7 +402,7 @@
         <div class="tl-row"><div class="tl-name"><span class="org">Ivy-Interactive/</span><a href="https://github.com/Ivy-Interactive/Ivy-Design-System" target="_blank" rel="noopener">Ivy-Design-System</a><span class="tl-tag" style="border-color:#3b82f655;color:#3b82f6">TypeScript</span><span class="tl-tag">2025–2026</span></div><div class="tl-right"><span class="tl-bar"><i style="width:3%"></i></span><span class="tl-n">11</span></div></div>
         <div class="tl-row"><div class="tl-name"><span class="org">SpaceCorps/</span><a href="https://github.com/SpaceCorps/neon-serenity" target="_blank" rel="noopener">neon-serenity</a><span class="tl-tag" style="border-color:#eab30855;color:#eab308">JavaScript</span></div><div class="tl-right"><span class="tl-bar"><i style="width:3%"></i></span><span class="tl-n">8</span></div></div>
       </div>
-      <div class="tl-year">2024<small>18 repos started · 1,566 commits</small></div>
+      <div class="tl-year">2024<small>18 repos started · 1,575 commits</small></div>
       <div class="tl-row"><div class="tl-name"><span class="tl-tag" style="border-color:rgba(240,171,252,.4);color:#f0abfc">milestone</span><span style="color:#e8edf5">Completed SALT full-stack C# programme</span></div><div class="tl-right"></div></div>
       <div class="tl-row"><div class="tl-name"><span class="tl-tag" style="border-color:rgba(240,171,252,.4);color:#f0abfc">milestone</span><span style="color:#e8edf5">Joined Scania as Solutions Architect</span></div><div class="tl-right"></div></div>
       <div class="tl-items">
@@ -393,9 +418,9 @@
         <div class="tl-row"><div class="tl-name"><span class="org">rorychatt/</span><a href="https://github.com/rorychatt/estomania-server" target="_blank" rel="noopener">estomania-server</a><span class="tl-tag" style="border-color:#3b82f655;color:#3b82f6">TypeScript</span></div><div class="tl-right"><span class="tl-bar"><i style="width:3%"></i></span><span class="tl-n">40</span></div></div>
         <div class="tl-row"><div class="tl-name"><span class="org">rorychatt/</span><a href="https://github.com/rorychatt/TackleWiki" target="_blank" rel="noopener">TackleWiki</a><span class="tl-tag" style="border-color:#8b5cf655;color:#8b5cf6">C#</span></div><div class="tl-right"><span class="tl-bar"><i style="width:3%"></i></span><span class="tl-n">36</span></div></div>
         <div class="tl-row"><div class="tl-name"><span class="org">rorychatt/</span><a href="https://github.com/rorychatt/RoryCraft2024-Volume2" target="_blank" rel="noopener">RoryCraft2024-Volume2</a><span class="tl-tag" style="border-color:#64748b55;color:#64748b">Shell</span></div><div class="tl-right"><span class="tl-bar"><i style="width:3%"></i></span><span class="tl-n">34</span></div></div>
+        <div class="tl-row"><div class="tl-name"><span class="org">rorychatt/</span><a href="https://github.com/rorychatt/rorychatt" target="_blank" rel="noopener">rorychatt</a><span class="tl-tag" style="border-color:#ef444455;color:#ef4444">HTML</span><span class="tl-tag">2024–2026</span></div><div class="tl-right"><span class="tl-bar"><i style="width:3%"></i></span><span class="tl-n">28</span></div></div>
         <div class="tl-row"><div class="tl-name"><span class="org">rorychatt/</span><a href="https://github.com/rorychatt/keepin-api" target="_blank" rel="noopener">keepin-api</a><span class="tl-tag" style="border-color:#8b5cf655;color:#8b5cf6">C#</span></div><div class="tl-right"><span class="tl-bar"><i style="width:3%"></i></span><span class="tl-n">21</span></div></div>
         <div class="tl-row"><div class="tl-name"><span class="org">rorychatt/</span><a href="https://github.com/rorychatt/csharp-simple-cli-app" target="_blank" rel="noopener">csharp-simple-cli-app</a><span class="tl-tag" style="border-color:#8b5cf655;color:#8b5cf6">C#</span></div><div class="tl-right"><span class="tl-bar"><i style="width:3%"></i></span><span class="tl-n">19</span></div></div>
-        <div class="tl-row"><div class="tl-name"><span class="org">rorychatt/</span><a href="https://github.com/rorychatt/rorychatt" target="_blank" rel="noopener">rorychatt</a><span class="tl-tag">2024–2026</span></div><div class="tl-right"><span class="tl-bar"><i style="width:3%"></i></span><span class="tl-n">19</span></div></div>
         <div class="tl-row"><div class="tl-name"><span class="org">rorychatt/</span><a href="https://github.com/rorychatt/address_book_csharp" target="_blank" rel="noopener">address_book_csharp</a><span class="tl-tag" style="border-color:#ef444455;color:#ef4444">HTML</span></div><div class="tl-right"><span class="tl-bar"><i style="width:3%"></i></span><span class="tl-n">15</span></div></div>
         <div class="tl-row"><div class="tl-name"><span class="org">rorychatt/</span><a href="https://github.com/rorychatt/alaTest-ValueChecker-ICSS-challenge-2024" target="_blank" rel="noopener">alaTest-ValueChecker-ICSS-challenge-2024</a><span class="tl-tag" style="border-color:#f59e0b55;color:#f59e0b">Jupyter Notebook</span></div><div class="tl-right"><span class="tl-bar"><i style="width:3%"></i></span><span class="tl-n">14</span></div></div>
         <div class="tl-row"><div class="tl-name"><span class="org">rorychatt/</span><a href="https://github.com/rorychatt/SpaceCorps-Online" target="_blank" rel="noopener">SpaceCorps-Online</a><span class="tl-tag" style="border-color:#ef444455;color:#ef4444">HTML</span></div><div class="tl-right"><span class="tl-bar"><i style="width:3%"></i></span><span class="tl-n">10</span></div></div>
@@ -459,6 +484,14 @@
             Recruited and manage an international team of six — designers and full-stack developers.
             Built the original WebGL prototype myself and still architect the rendering and networking
             layers. <strong>Launching summer 2026.</strong>
+          </p>
+          <p>
+            In 2026 I open-sourced our on-device game AI under MIT:
+            <a href="https://github.com/SpaceCorps/open-apple-models" target="_blank" rel="noopener">open-apple-models</a>
+            on Apple's Foundation Models and
+            <a href="https://github.com/SpaceCorps/open-android-models" target="_blank" rel="noopener">open-android-models</a>
+            on Gemini Nano. NPCs talk, call tools and make decisions on the player's device, and both libraries
+            speak one JSON-RPC protocol, so an engine can plug in either backend per platform.
           </p>
         </div>
       </article>
@@ -616,6 +649,7 @@
           <span class="tag">C / C++</span><span class="tag">Java</span>
           <span class="tag">Fortran</span><span class="tag">Assembler</span>
           <span class="tag">MATLAB</span><span class="tag">Dart</span>
+          <span class="tag">Swift</span><span class="tag">Kotlin</span>
         </div>
       </div>
       <div class="skill-group reveal">
@@ -627,6 +661,7 @@
           <span class="tag hot">Microsoft.Extensions.AI</span><span class="tag">Semantic Kernel</span>
           <span class="tag">Qdrant / pgvector</span><span class="tag">Structured output &amp; tool calling</span>
           <span class="tag">Prompt &amp; eval harnesses</span><span class="tag">LLM code generation</span>
+          <span class="tag">On-device models (Apple Foundation Models, Gemini Nano)</span>
         </div>
       </div>
       <div class="skill-group reveal">
@@ -766,7 +801,7 @@
   </div>
 </footer>
 
-<script src="assets/data.js?v=2730c82029"></script>
-<script src="assets/app.js?v=5f4cac18fa"></script>
+<script src="assets/data.js?v=7fc91321da"></script>
+<script src="assets/app.js?v=792943f432"></script>
 </body>
 </html>

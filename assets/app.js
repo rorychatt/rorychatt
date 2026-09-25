@@ -9,7 +9,8 @@
     'C#': '#8b5cf6', 'TypeScript': '#3b82f6', 'Rust': '#f97316',
     'JavaScript': '#eab308', 'Python': '#22c55e', 'Fortran': '#ec4899',
     'Shell': '#64748b', 'HTML': '#ef4444', 'Jupyter Notebook': '#f59e0b',
-    'Dart': '#06b6d4', 'Java': '#f43f5e', 'C': '#94a3b8', 'TeX': '#a3a3a3'
+    'Dart': '#06b6d4', 'Java': '#f43f5e', 'C': '#94a3b8', 'TeX': '#a3a3a3',
+    'Swift': '#f05138', 'Kotlin': '#a97bff'
   };
   function lc(l) { return LANG_COLOR[l] || '#6b7a90'; }
   function num(n) { return n.toLocaleString('en-US'); }

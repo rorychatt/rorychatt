@@ -118,5 +118,25 @@
     "url": "https://github.com/AndKyr/GETELEC",
     "stars": 9,
     "period": "2022 \u2013 2023"
+  },
+  {
+    "full": "SpaceCorps/open-apple-models",
+    "name": "open-apple-models",
+    "lang": "Swift",
+    "desc": "Real tool calling for Apple's on-device Foundation Models \u2014 NPC dialogue, AI decisions and content generation for games on iOS, iPadOS, macOS and visionOS 27, with no API keys or server costs.",
+    "role": "Measured the platform first: Apple's own fm serve returned 0 tool calls in 54 requests. Then built per-step tool steering, a Swift package, the oam CLI, an OpenAI-compatible server and a JSON-RPC protocol with a C ABI for game engines.",
+    "url": "https://github.com/SpaceCorps/open-apple-models",
+    "stars": 0,
+    "period": "2026"
+  },
+  {
+    "full": "SpaceCorps/open-android-models",
+    "name": "open-android-models",
+    "lang": "Kotlin",
+    "desc": "The Android sibling on Gemini Nano via ML Kit's GenAI Prompt API. Same concepts and same JSON-RPC protocol, so a game engine can inject either backend per platform.",
+    "role": "Gemini Nano has no native tool calling yet, so I built a validated step-envelope tool loop in Kotlin, plus a JNI entry point for native engines. Pre-release: tested on the JVM and against Apple's model as a proxy, not yet on a Gemini Nano device.",
+    "url": "https://github.com/SpaceCorps/open-android-models",
+    "stars": 0,
+    "period": "2026"
   }
 ]

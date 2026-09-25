@@ -21,6 +21,7 @@ LANG_COLOR = {
     "JavaScript": "#eab308", "Python": "#22c55e", "Fortran": "#ec4899",
     "Shell": "#64748b", "HTML": "#ef4444", "Jupyter Notebook": "#f59e0b",
     "Dart": "#06b6d4", "Java": "#f43f5e", "C": "#94a3b8", "TeX": "#a3a3a3",
+    "Swift": "#f05138", "Kotlin": "#a97bff",
 }
 MILESTONES = {
     "2022": ["Joined University of Tartu Institute of Technology as engineer &amp; researcher"],
