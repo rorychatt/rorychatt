@@ -1,10 +1,10 @@
-# Hi, I'm Mikael Rinne 👋
+# Hi, I'm Mikael Rinne
 
 **1st Founding Engineer [@Ivy-Interactive](https://github.com/Ivy-Interactive)** · **Founder & CEO [@SpaceCorps](https://github.com/SpaceCorps)**
 
-Full-stack and systems engineer from Estonia, based in Stockholm. Background in machine learning, chemistry, and computational physics — first author on an [IEEE IVNC 2023 paper](https://doi.org/10.1109/IVNC57695.2023.10188950) written in collaboration with CERN researchers. Over 25,000 GitHub contributions across systems programming, developer tooling, 3D graphics, and autonomous AI agents.
+Full-stack and systems engineer from Estonia, based in Stockholm. Background in machine learning, chemistry, and computational physics - first author on an [IEEE IVNC 2023 paper](https://doi.org/10.1109/IVNC57695.2023.10188950) written in collaboration with CERN researchers. Over 25,000 GitHub contributions across systems programming, developer tooling, 3D graphics, and autonomous AI agents.
 
-🌐 **[Portfolio & Contribution Heatmap](https://rorychatt.github.io/rorychatt/)** · 🪐 **[SpaceCorps Developer Hub](https://spacecorps.github.io)** · 💼 **[LinkedIn](https://www.linkedin.com/in/mikael-rinne/)** · 📄 **[IVNC 2023 Paper](https://doi.org/10.1109/IVNC57695.2023.10188950)**
+**[Portfolio & Contribution Heatmap](https://rorychatt.github.io/rorychatt/)** · **[SpaceCorps Developer Hub](https://spacecorps.github.io)** · **[LinkedIn](https://www.linkedin.com/in/mikael-rinne/)** · **[IVNC 2023 Paper](https://doi.org/10.1109/IVNC57695.2023.10188950)**
 
 ---
 
@@ -17,22 +17,22 @@ Full-stack and systems engineer from Estonia, based in Stockholm. Background in 
 
 ---
 
-## 📂 Public Projects & Open Source Directory
+## Public Projects & Open Source Directory
 
-### 1. 🪐 3D Graphics, Simulation & Physics
+### 1. 3D Graphics, Simulation & Physics
 
 Open-source real-time graphics, atomistic simulations, and virtual world engines written in Rust, Fortran, and TypeScript.
 
 | Project | Stack | Description |
 | :--- | :--- | :--- |
-| **[Space3d-Molecular](https://github.com/SpaceCorps/Space3d-Molecular)** | Rust, WGSL, Rayon | Molecular dynamics and electron-emission physics on Space3d — public API docs, input formats, and interactive 3D WebGPU viewer (`molviewer`). |
+| **[Space3d-Molecular](https://github.com/SpaceCorps/Space3d-Molecular)** | Rust, WGSL, Rayon | Molecular dynamics and electron-emission physics on Space3d: public API docs, input formats, and interactive 3D WebGPU viewer (`molviewer`). |
 | **[SpaceCorps 2](https://github.com/rorychatt/SpaceCorps2)** / **[Front](https://github.com/SpaceCorps/SpaceCorps-Front)** | TypeScript, WebGL, three.js | Original WebGL 3D browser MMO RPG with real-time multiplayer network state synchronization and procedural world rendering. |
 | **[GETELEC](https://github.com/AndKyr/GETELEC)** | Fortran, Python, Web | General Tool for Electron Emission Calculations: computes emission currents and Nottingham-effect heating from metal/semiconductor surfaces. Developed with CERN collaborators; basis of first-author IEEE IVNC 2023 paper. |
 | **[rustmc-server](https://github.com/rorychatt/rustmc-server)** | Rust, Tokio | High-concurrency multi-threaded Minecraft server written in Rust with Paper plugin compatibility and custom binary packet codecs. |
 
 ---
 
-### 2. 🤖 Autonomous Agents & On-Device AI Runtimes
+### 2. Autonomous Agents & On-Device AI Runtimes
 
 Tool-calling runtimes, on-device local model integration, and self-learning agent infrastructure.
 
@@ -48,7 +48,7 @@ Tool-calling runtimes, on-device local model integration, and self-learning agen
 
 ---
 
-### 3. ⚡ SpaceCorps Agentic CLI Fleet (Native Rust)
+### 3. SpaceCorps Agentic CLI Fleet (Native Rust)
 
 A fleet of standalone, high-performance, single-binary Rust CLIs designed for both human terminal operators and autonomous AI agents (featuring structured `--json` output, deterministic exit codes, and token-efficient formatting):
 
@@ -101,15 +101,15 @@ A fleet of standalone, high-performance, single-binary Rust CLIs designed for bo
 
 ---
 
-### 4. 🌿 The Ivy Ecosystem (.NET AI & Full-Stack Tooling)
+### 4. The Ivy Ecosystem (.NET AI & Full-Stack Tooling)
 
 Core developer platforms and compilers powering full-stack C# and agentic software creation at Ivy.
 
 | Project | Stack | Description |
 | :--- | :--- | :--- |
-| **[Ivy-Framework](https://github.com/Ivy-Interactive/Ivy-Framework)** (435★) | C#, .NET 9, Roslyn, TypeScript | Full-stack framework for building internal web tools with LLM code generation. Unifies front-end and back-end in a single C# codebase with instant hot-reload. 1st founding engineer & core architect. |
-| **[Ivy-Tendril](https://github.com/Ivy-Interactive/Ivy-Tendril)** (198★) | C#, .NET 9, Agent Runtimes | Next-generation developer environment built for when AI agents write 99% of code. Led implementation from first commit: 2,000+ commits and 650+ PRs in under six months. |
-| **[Rusty-Framework](https://github.com/Ivy-Interactive/Rusty-Framework)** | Rust, axum, WASM | Full-stack web application framework in pure Rust — porting Ivy's single-language unified architecture to systems programming. |
+| **[Ivy-Framework](https://github.com/Ivy-Interactive/Ivy-Framework)** (435 stars) | C#, .NET 9, Roslyn, TypeScript | Full-stack framework for building internal web tools with LLM code generation. Unifies front-end and back-end in a single C# codebase with instant hot-reload. 1st founding engineer & core architect. |
+| **[Ivy-Tendril](https://github.com/Ivy-Interactive/Ivy-Tendril)** (198 stars) | C#, .NET 9, Agent Runtimes | Next-generation developer environment built for when AI agents write 99% of code. Led implementation from first commit: 2,000+ commits and 650+ PRs in under six months. |
+| **[Rusty-Framework](https://github.com/Ivy-Interactive/Rusty-Framework)** | Rust, axum, WASM | Full-stack web application framework in pure Rust: porting Ivy's single-language unified architecture to systems programming. |
 | **[Ivy.NativeJsonDiff](https://github.com/Ivy-Interactive/Ivy.NativeJsonDiff)** | C#, Rust | High-performance native JSON diffing engine for reactive UI updates and state synchronization across the wire. |
 | **[Ivy.Docs.Compiler](https://github.com/Ivy-Interactive/Ivy.Docs.Compiler)** | Rust | High-speed documentation compiler and markdown AST transformer powering Ivy developer docs. |
 | **[Ivy-Command-Center](https://github.com/rorychatt/Ivy-Command-Center)** | C#, ASP.NET Core | Role-based authorization, enterprise permission scoping, and security policies for Ivy applications. |
@@ -121,7 +121,7 @@ Core developer platforms and compilers powering full-stack C# and agentic softwa
 
 ---
 
-### 5. 💼 Web Platforms, Interactive Visualizations & Applications
+### 5. Web Platforms, Interactive Visualizations & Applications
 
 Open-source web platforms, 3D interactive graphics, and systems tools.
 
@@ -143,15 +143,15 @@ Open-source web platforms, 3D interactive graphics, and systems tools.
 
 ---
 
-### 6. 📚 Curated Research & Ecosystem Resources
+### 6. Curated Research & Ecosystem Resources
 
 Maintained community lists and research compendiums tracking agent architectures, UI design, and modern dev tools:
 
-- **[awesome-ai-agent-platforms](https://github.com/rorychatt/awesome-ai-agent-platforms)** — Open-source AI coworkers, teammates, runtimes, and coding agents.
-- **[Awesome-Graphs-Meet-Agents](https://github.com/rorychatt/Awesome-Graphs-Meet-Agents)** — Graph-empowered agents and agent-facilitated graph learning.
-- **[Awesome-Reliable-Self-Evolving-Agents](https://github.com/rorychatt/Awesome-Reliable-Self-Evolving-Agents)** — Research survey on self-evolving and self-correcting agents.
-- **[awesome-x402](https://github.com/rorychatt/awesome-x402)** — HTTP 402 payment required protocol, micropayments, and agent economy tooling.
-- **[frontend-resources](https://github.com/rorychatt/frontend-resources)** & **[frontend-design-resources](https://github.com/rorychatt/frontend-design-resources)** — Curated directories for modern UI/UX design and frontend tooling.
+- **[awesome-ai-agent-platforms](https://github.com/rorychatt/awesome-ai-agent-platforms)**: Open-source AI coworkers, teammates, runtimes, and coding agents.
+- **[Awesome-Graphs-Meet-Agents](https://github.com/rorychatt/Awesome-Graphs-Meet-Agents)**: Graph-empowered agents and agent-facilitated graph learning.
+- **[Awesome-Reliable-Self-Evolving-Agents](https://github.com/rorychatt/Awesome-Reliable-Self-Evolving-Agents)**: Research survey on self-evolving and self-correcting agents.
+- **[awesome-x402](https://github.com/rorychatt/awesome-x402)**: HTTP 402 payment required protocol, micropayments, and agent economy tooling.
+- **[frontend-resources](https://github.com/rorychatt/frontend-resources)** & **[frontend-design-resources](https://github.com/rorychatt/frontend-design-resources)**: Curated directories for modern UI/UX design and frontend tooling.
 
 ---
 
