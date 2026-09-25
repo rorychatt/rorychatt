@@ -6,7 +6,7 @@
     "desc": "The ultimate framework for building internal tools with LLM code generation \u2014 front-end and back-end unified into a single C# codebase.",
     "role": "Founding engineer and top contributor. Own the core codebase, product engineering and the AI code-generation model that turns prompts into working C# apps.",
     "url": "https://github.com/Ivy-Interactive/Ivy-Framework",
-    "stars": 434,
+    "stars": 435,
     "period": "2025 \u2013 now"
   },
   {
@@ -124,7 +124,7 @@
     "name": "open-apple-models",
     "lang": "Swift",
     "desc": "Real tool calling for Apple's on-device Foundation Models \u2014 NPC dialogue, AI decisions and content generation for games on iOS, iPadOS, macOS and visionOS 27, with no API keys or server costs.",
-    "role": "Measured the platform first: Apple's own fm serve returned 0 tool calls in 54 requests. Then built per-step tool steering, a Swift package, the oam CLI, an OpenAI-compatible server and a JSON-RPC protocol with a C ABI for game engines.",
+    "role": "In our tests Apple's own fm serve returned 0 tool calls in 54 requests, so I built per-step tool steering, a Swift package, the oam CLI, an OpenAI-compatible server and a JSON-RPC protocol with a C ABI for game engines.",
     "url": "https://github.com/SpaceCorps/open-apple-models",
     "stars": 0,
     "period": "2026"
