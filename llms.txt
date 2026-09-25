@@ -14,7 +14,7 @@ Contact: mikael@spacecorpstechnology.com
   product engineering, AI modelling and project planning; leads the development team.
   Ivy is raising a $5M seed round.
 - **Company founded:** SpaceCorps Technology OÜ (2023 – now). Open-source 3D MMO RPG that runs
-  in the browser; team of six; launching summer 2026.
+  in the browser; team of six; coming 2027.
 - **Previous:** Solutions Architect / Senior Full-stack Engineer at Scania (2024–2025);
   Full-stack Software Engineer at Nixor EE AS (2023–2024); Full-stack Software Engineer &
   Researcher at University of Tartu Institute of Technology (2022–2023); private tutor in
