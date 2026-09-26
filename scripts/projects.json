@@ -138,5 +138,55 @@
     "url": "https://github.com/SpaceCorps/open-android-models",
     "stars": 0,
     "period": "2026"
+  },
+  {
+    "full": "SpaceCorps/DiskLens",
+    "name": "DiskLens",
+    "lang": "Rust",
+    "desc": "High-performance native disk space visualizer and file explorer in Rust. Dual-mode terminal CLI and desktop GUI with real-time percentage fill gauges.",
+    "role": "Built an ultra-fast parallel multi-core traversal engine with Rayon and statvfs (<150ms scans), custom ASCII bar gauges, and an egui desktop app.",
+    "url": "https://github.com/SpaceCorps/DiskLens",
+    "stars": 0,
+    "period": "2026"
+  },
+  {
+    "full": "SpaceCorps/open-browser",
+    "name": "open-browser",
+    "lang": "Rust",
+    "desc": "Agentic browser automation platform: Rust backend daemon, desktop app, and web UI that fans out open-agents to drive browser workflows. Every action is backed by a CLI command.",
+    "role": "Architected the multi-agent browser runner combining native Rust service infrastructure, Playwright session steering, and token-efficient DOM serialization.",
+    "url": "https://github.com/SpaceCorps/open-browser",
+    "stars": 0,
+    "period": "2026"
+  },
+  {
+    "full": "SpaceCorps/open-agents",
+    "name": "open-agents",
+    "lang": "Rust",
+    "desc": "CLI-first autonomous coding agent runner: dynamic LLM provider selection, multi-step tool execution, and self-learning project memory across development sessions.",
+    "role": "Engineered the core agent execution loop and memory vault integration in Rust, enabling coding agents to maintain persistent understanding of codebases.",
+    "url": "https://github.com/SpaceCorps/open-agents",
+    "stars": 0,
+    "period": "2026"
+  },
+  {
+    "full": "SpaceCorps/Space3d-Molecular",
+    "name": "Space3d-Molecular",
+    "lang": "Rust",
+    "desc": "Molecular dynamics and electron-emission physics on Space3d: public API documentation, input formats, and interactive 3D WebGPU molecule viewer (molviewer).",
+    "role": "Developed the public docs, data specs, and WebGPU renderer for quantum electron emission and molecular simulation.",
+    "url": "https://github.com/SpaceCorps/Space3d-Molecular",
+    "stars": 0,
+    "period": "2026"
+  },
+  {
+    "full": "SpaceCorps/play",
+    "name": "SpaceCorps 2027 (Play)",
+    "lang": "Rust",
+    "desc": "Cross-platform client distribution and download portal for SpaceCorps 2027 (space MMO RPG) across macOS (.dmg), Windows (.zip), and Linux (.AppImage/.tar.gz).",
+    "role": "Automated packaging pipeline, headless verification smoke tests, and release distribution on GitHub Pages and Sliplane.",
+    "url": "https://github.com/SpaceCorps/play",
+    "stars": 0,
+    "period": "2026"
   }
 ]

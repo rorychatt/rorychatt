@@ -26,6 +26,7 @@ Open-source real-time graphics, atomistic simulations, and virtual world engines
 | Project | Stack | Description |
 | :--- | :--- | :--- |
 | **[Space3d-Molecular](https://github.com/SpaceCorps/Space3d-Molecular)** | Rust, WGSL, Rayon | Molecular dynamics and electron-emission physics on Space3d: public API docs, input formats, and interactive 3D WebGPU viewer (`molviewer`). |
+| **[SpaceCorps 2027 (Play)](https://github.com/SpaceCorps/play)** | Rust, wgpu, WebGPU | Public distribution and download portal for SpaceCorps 2027 (3D space MMO RPG) across macOS (.dmg), Windows (.zip), and Linux (.AppImage/.tar.gz). |
 | **[SpaceCorps 2](https://github.com/rorychatt/SpaceCorps2)** / **[Front](https://github.com/SpaceCorps/SpaceCorps-Front)** | TypeScript, WebGL, three.js | Original WebGL 3D browser MMO RPG with real-time multiplayer network state synchronization and procedural world rendering. |
 | **[GETELEC](https://github.com/AndKyr/GETELEC)** | Fortran, Python, Web | General Tool for Electron Emission Calculations: computes emission currents and Nottingham-effect heating from metal/semiconductor surfaces. Developed with CERN collaborators; basis of first-author IEEE IVNC 2023 paper. |
 | **[rustmc-server](https://github.com/rorychatt/rustmc-server)** | Rust, Tokio | High-concurrency multi-threaded Minecraft server written in Rust with Paper plugin compatibility and custom binary packet codecs. |
@@ -55,6 +56,7 @@ A fleet of standalone, high-performance, single-binary Rust CLIs designed for bo
 #### Cloud, Compute & Storage
 | Project | Stack | Description |
 | :--- | :--- | :--- |
+| **[DiskLens](https://github.com/SpaceCorps/DiskLens)** | Rust, Rayon, egui | High-speed disk space visualizer and native file explorer: instant parallel multi-core terminal scanning with ASCII gauges and native desktop GUI. |
 | **[Sliplane-Cli](https://github.com/SpaceCorps/Sliplane-Cli)** | Rust | Native CLI & agent interface for the Sliplane cloud hosting and deployment API (services, deployments, volumes, env vars, webhooks). |
 | **[Cloudflare-Cli](https://github.com/SpaceCorps/Cloudflare-Cli)** | Rust | Native CLI & agent interface for Cloudflare v4 API (DNS records, zone management, cache purging, page rules). |
 | **[Storage-Cli](https://github.com/SpaceCorps/Storage-Cli)** | Rust | High-throughput CLI for uploading files/directories to Azure Blob Storage with automated zip compression and SAS token generation. |

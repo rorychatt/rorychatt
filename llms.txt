@@ -76,6 +76,12 @@ Contact: mikael@spacecorpstechnology.com
   the Android sibling on Gemini Nano via the ML Kit GenAI Prompt API, speaking the same JSON-RPC
   protocol over JNI. Pre-release: tested on the JVM and against a proxy model, not yet on a
   Gemini Nano device.
+- [DiskLens](https://github.com/SpaceCorps/DiskLens) (Rust, MIT, 2026): high-speed native disk space
+  visualizer and file explorer with real-time percentage fill gauges (terminal CLI + desktop GUI).
+- [open-browser](https://github.com/SpaceCorps/open-browser) (Rust, MIT, 2026): agentic browser
+  automation platform combining a native Rust service, web interface, and CLI commands.
+- [open-agents](https://github.com/SpaceCorps/open-agents) (Rust, MIT, 2026): CLI-first autonomous
+  coding agent runner with multi-step tool execution and self-learning project memory.
 
 ## Links
 
