@@ -49,6 +49,8 @@ Contact: mikael@spacecorpstechnology.com
 
 ## Pages
 
+- [CV, two pages (PDF)](https://rorychatt.github.io/rorychatt/cv/Mikael-Rinne-CV.pdf): the
+  concise CV. HTML version: https://rorychatt.github.io/rorychatt/cv/
 - [Portfolio (single page)](https://rorychatt.github.io/rorychatt/): full CV, ranked projects,
   three-year contribution heatmap, reverse-chronological repository timeline, experience,
   education and toolkit. Content is server-served static HTML; the project, heatmap and

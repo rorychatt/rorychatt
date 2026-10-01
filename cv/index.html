@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mikael Rinne - CV</title>
+<meta name="description" content="CV of Mikael Rinne: founding engineer working in Rust, C# and TypeScript on AI developer tools. Ivy Framework, Ivy Tendril, SpaceCorps.">
+<link rel="canonical" href="https://rorychatt.github.io/rorychatt/cv/">
+<style>
+  @page { size: A4; margin: 13mm 15mm 12mm 15mm; }
+  :root {
+    --ink: #14171f;
+    --muted: #5a6376;
+    --rule: #d6dbe5;
+    --accent: #1f4fd8;
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  body {
+    margin: 0 auto;
+    max-width: 180mm;
+    padding: 10mm 0;
+    color: var(--ink);
+    font: 9.35pt/1.4 "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+    font-variant-numeric: tabular-nums;
+  }
+  @media print { body { padding: 0; max-width: none; } }
+  a { color: inherit; text-decoration: none; }
+  a:hover { color: var(--accent); }
+
+  header { display: flex; justify-content: space-between; align-items: flex-end; gap: 12mm;
+           padding-bottom: 3.2mm; border-bottom: 1.6px solid var(--ink); }
+  h1 { margin: 0; font-size: 23pt; line-height: 1.05; letter-spacing: -0.4px; font-weight: 700; }
+  .role { margin-top: 1.6mm; color: var(--accent); font-weight: 600; font-size: 10.4pt; }
+  .contact { text-align: right; color: var(--muted); font-size: 8.7pt; line-height: 1.55; }
+  .contact a { color: var(--ink); }
+
+  section { margin-top: 4.4mm; }
+  h2 { margin: 0 0 1.8mm; font-size: 8.3pt; letter-spacing: 1.5px; text-transform: uppercase;
+       color: var(--accent); font-weight: 700; padding-bottom: 0.9mm; border-bottom: 1px solid var(--rule); }
+
+  .summary { margin: 0; }
+  .summary strong { font-weight: 600; }
+
+  .job { margin-top: 3.2mm; break-inside: avoid-page; }
+  .job:first-of-type { margin-top: 0; }
+  .job-head { display: flex; justify-content: space-between; align-items: baseline; gap: 6mm; }
+  .job-head h3 { margin: 0; font-size: 10.1pt; font-weight: 700; }
+  .job-head h3 .org { font-weight: 700; }
+  .job-head h3 .pos { font-weight: 500; color: var(--muted); }
+  .when { color: var(--muted); font-size: 8.7pt; white-space: nowrap; }
+  .lede { margin: 0.6mm 0 0.8mm; color: var(--muted); font-style: italic; }
+  ul { margin: 0.8mm 0 0; padding-left: 4.3mm; }
+  li { margin: 0.55mm 0; padding-left: 0.6mm; }
+  li::marker { color: var(--accent); }
+  b, strong { font-weight: 600; }
+
+  .cols { display: grid; grid-template-columns: 1fr 1fr; gap: 0 9mm; }
+  .proj { margin: 0; padding: 0; list-style: none; }
+  .proj li { padding-left: 0; margin: 0.9mm 0; }
+  .proj .n { font-weight: 600; }
+  .proj .u { color: var(--muted); font-size: 8.4pt; }
+
+  dl.skills { margin: 0; display: grid; grid-template-columns: 24mm 1fr; gap: 0.9mm 3mm; }
+  dl.skills dt { font-weight: 600; }
+  dl.skills dd { margin: 0; }
+
+  .edu { margin: 0 0 1.6mm; }
+  .edu-head { display: flex; justify-content: space-between; align-items: baseline; gap: 6mm; }
+  .edu-head .t { font-weight: 600; }
+  .edu p { margin: 0.3mm 0 0; color: var(--muted); }
+  .foot { margin-top: 4mm; padding-top: 1.6mm; border-top: 1px solid var(--rule);
+          color: var(--muted); font-size: 7.7pt; display: flex; justify-content: space-between; gap: 8mm; }
+</style>
+</head>
+<body>
+
+<header>
+  <div>
+    <h1>Mikael Rinne</h1>
+    <div class="role">Founding Engineer &middot; Rust, C#, TypeScript</div>
+  </div>
+  <div class="contact">
+    Stockholm, Sweden<br>
+    <a href="mailto:mikael@spacecorpstechnology.com">mikael@spacecorpstechnology.com</a><br>
+    <a href="https://github.com/rorychatt">github.com/rorychatt</a><br>
+    <a href="https://www.linkedin.com/in/mikael-rinne/">linkedin.com/in/mikael-rinne</a><br>
+    <a href="https://rorychatt.github.io/rorychatt/">rorychatt.github.io/rorychatt</a>
+  </div>
+</header>
+
+<section>
+  <h2>Profile</h2>
+  <p class="summary">
+    Founding engineer who builds developer tools and real-time systems in <strong>Rust, C# and TypeScript</strong>.
+    Top contributor to <strong>Ivy Framework</strong> (435 GitHub stars) and lead engineer of <strong>Ivy Tendril</strong>,
+    a development environment for teams where AI agents write most of the code. Founder of <strong>SpaceCorps</strong>,
+    which ships a space MMO on its own Rust engine and maintains 20+ open-source Rust CLIs for AI agents.
+    Started in computational physics and machine learning, with a first-author IEEE paper written with CERN collaborators.
+  </p>
+</section>
+
+<section>
+  <h2>Experience</h2>
+
+  <div class="job">
+    <div class="job-head">
+      <h3><span class="org">Ivy Interactive</span> <span class="pos">&middot; 1st Founding Engineer</span></h3>
+      <span class="when">2025 &ndash; present &middot; Stockholm</span>
+    </div>
+    <p class="lede">A .NET AI startup: a pure-C# full-stack framework for internal tools with LLM code generation, and Tendril, an agentic development environment.</p>
+    <ul>
+      <li>Top contributor to <a href="https://github.com/Ivy-Interactive/Ivy-Framework"><b>Ivy Framework</b></a> (C#/.NET, 435 stars, 53 forks, 26 contributors): <b>3,586 commits and 1,148 PRs</b>, 38% of the repository's history.</li>
+      <li>Lead engineer of <a href="https://github.com/Ivy-Interactive/Ivy-Tendril"><b>Ivy Tendril</b></a> since its first commit in April 2026 (200+ stars; macOS, Windows, Linux): <b>2,128 commits and 652 PRs</b>, 48% of the repository. Agents run in parallel in isolated git worktrees and changes are reviewed and merged in-app. Now leading the V2 rewrite as a TypeScript and Rust monorepo.</li>
+      <li>Wrote much of the Rust layer: <a href="https://github.com/Ivy-Interactive/Rusty-Framework">Rusty-Framework</a> (pure-Rust port of Ivy), <a href="https://github.com/Ivy-Interactive/Ivy.NativeJsonDiff">Ivy.NativeJsonDiff</a> (RFC 6902 diffing over Rust FFI for reactive UI updates), Ivy.Docs.Compiler, Tendril-Service (headless agent orchestration service and CLI), and co-built <a href="https://github.com/Ivy-Interactive/Rustino">Rustino</a> (native webview windows, a Photino.NET replacement).</li>
+      <li>Own product engineering, AI modelling and planning, and lead a team of developers. Across the company's GitHub organisation: <b>2,700+ PRs authored and 600+ reviewed</b>.</li>
+      <li>Speaker at the Agentics Foundation "Harness Engineering" meetup (IBM Innovation Studio) as maintainer of Ivy Tendril; author of the talk "Three things that nearly killed our software factory".</li>
+    </ul>
+  </div>
+
+  <div class="job">
+    <div class="job-head">
+      <h3><span class="org">SpaceCorps Technology O&Uuml;</span> <span class="pos">&middot; Founder &amp; CEO / CTO</span></h3>
+      <span class="when">2023 &ndash; present &middot; Remote, Europe</span>
+    </div>
+    <ul>
+      <li>Founded the company around an open-source 3D MMO; recruited and lead an international team of six (designers and full-stack developers). Built the original WebGL prototype, <a href="https://github.com/rorychatt/SpaceCorps2">SpaceCorps 2</a> (TypeScript, three.js), myself.</li>
+      <li>Built <b>Space3d</b>, an in-house game engine in Rust on wgpu/WebGPU targeting native, web and mobile, and <a href="https://spacecorps.github.io/play/"><b>SpaceCorps 2027</b></a> on top of it: a space MMO with public builds for Windows, macOS and Linux (v0.4.5, 1 Oct 2026).</li>
+      <li>Published <a href="https://github.com/SpaceCorps"><b>20+ MIT-licensed Rust CLIs</b></a> that give AI agents safe access to real services (Gmail that can only draft, Cloudflare, Firecrawl, Exa, Sliplane, Namecheap and more): structured output, stable exit codes, OS-keychain credentials and prompt-injection guards. Co-built with Niels Bosma.</li>
+      <li>Open-sourced <a href="https://github.com/SpaceCorps/open-apple-models">open-apple-models</a> and <a href="https://github.com/SpaceCorps/open-android-models">open-android-models</a> (Swift, Kotlin; pre-release): tool calling for on-device LLMs (Apple Foundation Models, Gemini Nano) to drive game NPCs.</li>
+    </ul>
+  </div>
+
+  <div class="job">
+    <div class="job-head">
+      <h3><span class="org">Scania</span> <span class="pos">&middot; Solutions Architect / Senior Full-stack Engineer</span></h3>
+      <span class="when">2024 &ndash; 2025 &middot; Stockholm</span>
+    </div>
+    <ul>
+      <li>Modernised the internal platform used to deliver trucks, improving the user experience and supporting sales.</li>
+      <li>Proposed and implemented new workflows and algorithms during the platform's migration to AWS.</li>
+    </ul>
+  </div>
+
+  <div class="job">
+    <div class="job-head">
+      <h3><span class="org">Nixor EE AS</span> <span class="pos">&middot; Full-stack Software Engineer</span></h3>
+      <span class="when">2023 &ndash; 2024 &middot; Tallinn</span>
+    </div>
+    <ul>
+      <li>Built and shipped SaaS and POS improvements for Coop, Stockmann Group and Selver, using custom Odoo modules and payment integrations.</li>
+      <li>Found and fixed critical transaction bugs in production retail systems across Estonia.</li>
+    </ul>
+  </div>
+
+  <div class="job">
+    <div class="job-head">
+      <h3><span class="org">University of Tartu, Institute of Technology</span> <span class="pos">&middot; Software Engineer &amp; Researcher</span></h3>
+      <span class="when">2022 &ndash; 2023 &middot; Tartu</span>
+    </div>
+    <ul>
+      <li>Built scientific web software for molecular dynamics and quantum emission calculations with CERN collaborators (<a href="https://github.com/AndKyr/GETELEC">GETELEC</a>, 174 commits), bridging theoretical and experimental physics.</li>
+      <li>First author of <a href="https://doi.org/10.1109/IVNC57695.2023.10188950">"An Online Tool for Thermal-Field Emission Calculations from Metal and Semiconducting Emitters"</a>, IEEE IVNC 2023.</li>
+    </ul>
+  </div>
+
+  <div class="job">
+    <div class="job-head">
+      <h3><span class="org">Private tutor, natural sciences</span></h3>
+      <span class="when">2019 &ndash; 2024 &middot; Tallinn, remote</span>
+    </div>
+    <ul>
+      <li>Taught natural sciences one-on-one, in groups and remotely, helping students improve their academic results. Mentoring is still central to how I run a team.</li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <h2>Open source</h2>
+  <div class="cols">
+    <ul class="proj">
+      <li><span class="n">Ivy Framework</span> &middot; C#/.NET, 435 stars<br><a class="u" href="https://github.com/Ivy-Interactive/Ivy-Framework">github.com/Ivy-Interactive/Ivy-Framework</a></li>
+      <li><span class="n">Ivy Tendril</span> &middot; agentic dev environment, 200+ stars<br><a class="u" href="https://github.com/Ivy-Interactive/Ivy-Tendril">github.com/Ivy-Interactive/Ivy-Tendril</a></li>
+      <li><span class="n">SpaceCorps CLI fleet</span> &middot; 20+ Rust CLIs for agents, MIT<br><a class="u" href="https://github.com/SpaceCorps">github.com/SpaceCorps</a></li>
+    </ul>
+    <ul class="proj">
+      <li><span class="n">open-apply</span> &middot; Rust CLI for AI-assisted job search and application tracking, MIT<br><a class="u" href="https://github.com/SpaceCorps/open-apply">github.com/SpaceCorps/open-apply</a></li>
+      <li><span class="n">open-apple-models</span> &middot; on-device LLM tool calling, Swift, MIT<br><a class="u" href="https://github.com/SpaceCorps/open-apple-models">github.com/SpaceCorps/open-apple-models</a></li>
+      <li><span class="n">Rusty-Framework</span> &middot; full-stack web framework in pure Rust<br><a class="u" href="https://github.com/Ivy-Interactive/Rusty-Framework">github.com/Ivy-Interactive/Rusty-Framework</a></li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <h2>Education &amp; honors</h2>
+  <div class="cols">
+    <div>
+      <div class="edu">
+        <div class="edu-head"><span class="t">SALT School of Applied Technology</span><span class="when">2024</span></div>
+        <p>Full-stack C# developer programme: TDD, mob programming, ASP.NET, Blazor, EF Core, React.</p>
+      </div>
+      <div class="edu">
+        <div class="edu-head"><span class="t">University of Tartu, Chemistry</span><span class="when">2019 &ndash; 2024</span></div>
+        <p>BSc studies with ML, physics and C/Assembler/Java coursework; left before graduating to build software full time.</p>
+      </div>
+    </div>
+    <div>
+      <div class="edu">
+        <div class="edu-head"><span class="t">Bronze medal, 51st International Chemistry Olympiad</span><span class="when">2019</span></div>
+      </div>
+      <div class="edu">
+        <div class="edu-head"><span class="t">1st place, Estonian National Chemistry Olympiad</span><span class="when">2018</span></div>
+      </div>
+      <div class="edu">
+        <div class="edu-head"><span class="t">Google: Foundations of Data Science, Python</span><span class="when">2024</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Skills</h2>
+  <dl class="skills">
+    <dt>Languages</dt>
+    <dd>Rust, C#, TypeScript, Python, SQL; also Swift, Kotlin, C/C++, Java, Fortran, WGSL</dd>
+    <dt>Backend &amp; cloud</dt>
+    <dd>.NET 9, ASP.NET Core, EF Core, SignalR, axum, Tokio, PostgreSQL, Docker, Kubernetes, AWS, Azure, GitHub Actions</dd>
+    <dt>Frontend &amp; graphics</dt>
+    <dd>React, Vite, Tailwind, TanStack, three.js/WebGL, wgpu/WebGPU</dd>
+    <dt>AI engineering</dt>
+    <dd>Agent orchestration, tool calling, MCP, Anthropic and OpenAI APIs, RAG and vector search, on-device models, evals</dd>
+    <dt>Also used</dt>
+    <dd>Angular, Node.js, Dapper, Odoo, SQL Server, MySQL, xUnit, Vitest, Jest, Jira, Confluence, COMSOL, Modelica, MATLAB, Assembler</dd>
+    <dt>Practice</dt>
+    <dd>TDD, SOLID, agile, CI/CD, code review, mob programming, technical leadership, hiring and mentoring</dd>
+    <dt>Human languages</dt>
+    <dd>English (native), Estonian (fluent), Russian (fluent)</dd>
+  </dl>
+</section>
+
+<div class="foot">
+  <span>GitHub figures from the GitHub API, 1 October 2026. References on request.</span>
+  <span>rorychatt.github.io/rorychatt/cv</span>
+</div>
+
+</body>
+</html>
