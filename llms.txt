@@ -22,8 +22,8 @@ Contact: mikael@spacecorpstechnology.com
 - **Research:** First author of "An Online Tool for Thermal-Field Emission Calculations from
   Metal and Semiconducting Emitters", IEEE IVNC 2023 — doi:10.1109/IVNC57695.2023.10188950.
 - **Education:** Full-stack C# Developer, SALT School of Applied Technology (2024).
-  Chemistry studies at University of Tartu (2019–2024, did not graduate — left to build
-  software full time).
+  Chemistry studies at University of Tartu (2019–2024) with a computational and data
+  science focus.
 - **Languages:** English (native), Estonian (fluent), Russian (fluent).
 - **Git history:** 28,000+ GitHub contributions since January 2023 across public, private and
   organisation repositories. Primary languages by commit volume: C#, TypeScript, Rust.
