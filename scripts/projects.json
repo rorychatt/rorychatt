@@ -20,6 +20,16 @@
     "period": "2026"
   },
   {
+    "full": "Ivy-Interactive/Ivy-Tendril-V2",
+    "name": "Ivy Tendril V2",
+    "lang": "TypeScript",
+    "desc": "Work-in-progress upgrade of Tendril: a TypeScript and Rust monorepo of apps, packages, crates and promptwares. The repo is temporary and will be removed once the work lands in Ivy-Tendril.",
+    "role": "Lead engineer of the rewrite.",
+    "url": "https://github.com/Ivy-Interactive/Ivy-Tendril-V2",
+    "stars": 0,
+    "period": "2026"
+  },
+  {
     "full": "rorychatt/SpaceCorps2",
     "name": "SpaceCorps 2",
     "lang": "TypeScript",
