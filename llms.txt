@@ -25,7 +25,7 @@ Contact: mikael@spacecorpstechnology.com
   Chemistry studies at University of Tartu (2019–2024, did not graduate — left to build
   software full time).
 - **Languages:** English (native), Estonian (fluent), Russian (fluent).
-- **Git history:** 25,000+ GitHub contributions since January 2023 across public, private and
+- **Git history:** 28,000+ GitHub contributions since January 2023 across public, private and
   organisation repositories. Primary languages by commit volume: C#, TypeScript, Rust.
 
 ## Technical focus
@@ -62,7 +62,7 @@ Contact: mikael@spacecorpstechnology.com
 
 - [Ivy Framework](https://github.com/Ivy-Interactive/Ivy-Framework) (C#, 435★): framework for
   building internal tools with LLM code generation; front-end and back-end in one C# codebase.
-- [Ivy Tendril](https://github.com/Ivy-Interactive/Ivy-Tendril) (C#, 198★): developer tool for
+- [Ivy Tendril](https://github.com/Ivy-Interactive/Ivy-Tendril) (C#, 201★): developer tool for
   an agentic era, where agents write most of the code.
 - [SpaceCorps 2](https://github.com/rorychatt/SpaceCorps2) (TypeScript): WebGL 3D MMO RPG,
   client and server.
@@ -84,6 +84,10 @@ Contact: mikael@spacecorpstechnology.com
   automation platform combining a native Rust service, web interface, and CLI commands.
 - [open-agents](https://github.com/SpaceCorps/open-agents) (Rust, MIT, 2026): CLI-first autonomous
   coding agent runner with multi-step tool execution and self-learning project memory.
+- [open-apply](https://github.com/SpaceCorps/open-apply) (Rust, MIT, 2026): CLI for running a job
+  search with an AI agent. Finds postings in public feeds, prepares materials per job, records every
+  application and tracks employer replies; YAML or JSON output and stable exit codes. Pre-release, no
+  tagged release yet. Docs: https://spacecorps.github.io/open-apply/
 
 ## Links
 

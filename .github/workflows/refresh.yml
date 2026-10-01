@@ -1,0 +1,93 @@
+name: Refresh profile data
+
+# Runs daily. Regenerates assets/data.js, the portfolio, the README numbers and the CV
+# (HTML and PDF), then commits the result to main.
+#
+# Full refresh (private repositories included) needs a STATS_TOKEN secret: a personal access
+# token with the `repo` and `read:user` scopes. Without it the job runs in light mode, which
+# refreshes the contribution calendar, stars and the public commit and PR counts using the
+# default token and leaves the private-repository timeline as it was. See scripts/README.md.
+
+on:
+  schedule:
+    - cron: "23 4 * * *"
+  workflow_dispatch:
+  push:
+    branches: [add-cv]
+    paths:
+      - ".github/workflows/refresh.yml"
+      - "scripts/**"
+      - "cv/**"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: refresh-profile
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    env:
+      STATS_TOKEN: ${{ secrets.STATS_TOKEN }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Refresh data (full, private repositories included)
+        if: env.STATS_TOKEN != ''
+        env:
+          GH_TOKEN: ${{ secrets.STATS_TOKEN }}
+        run: python scripts/build-data.py
+
+      - name: Refresh data (light, public view only)
+        if: env.STATS_TOKEN == ''
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          echo "::warning title=STATS_TOKEN not set::Running the light refresh. The private-repository timeline and the org-wide PR counts were not updated."
+          python scripts/build-data.py --light
+
+      - name: Render portfolio, README and CV
+        run: python scripts/prerender.py
+
+      - name: Build the CV PDF
+        env:
+          CHROME_PATH: /usr/bin/google-chrome
+        run: node cv/build-pdf.mjs
+
+      - name: Check the CV is still two pages
+        run: |
+          pip install --quiet pypdf
+          python - <<'PY'
+          from pypdf import PdfReader
+          n = len(PdfReader("cv/Mikael-Rinne-CV.pdf").pages)
+          print(f"CV pages: {n}")
+          raise SystemExit(0 if n == 2 else f"CV must be exactly 2 pages, got {n}")
+          PY
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: cv-preview
+          path: cv/Mikael-Rinne-CV.pdf
+
+      - name: Commit and push
+        if: github.ref == 'refs/heads/main'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/data.js index.html README.md llms.txt cv
+          if git diff --cached --quiet; then
+            echo "Nothing changed."
+          else
+            git commit -m "chore: refresh GitHub data ($(date -u +%F))"
+            git push
+          fi

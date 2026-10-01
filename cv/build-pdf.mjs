@@ -29,9 +29,9 @@ if (!browser) {
   process.exit(1);
 }
 
-execFileSync(
-  browser,
-  ["--headless", "--disable-gpu", "--no-pdf-header-footer", `--print-to-pdf=${out}`, src],
-  { stdio: "inherit" },
-);
+const args = ["--headless", "--disable-gpu", "--no-pdf-header-footer", `--print-to-pdf=${out}`, src];
+// Hosted CI runners restrict the sandbox's user namespaces; the page is our own static HTML.
+if (process.env.CI) args.unshift("--no-sandbox");
+
+execFileSync(browser, args, { stdio: "inherit" });
 console.log(`wrote ${out}`);
