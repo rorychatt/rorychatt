@@ -2,15 +2,15 @@
 
 **1st Founding Engineer [@Ivy-Interactive](https://github.com/Ivy-Interactive)** · **Founder & CEO [@SpaceCorps](https://github.com/SpaceCorps)**
 
-Full-stack and systems engineer from Estonia, based in Stockholm. Background in machine learning, chemistry, and computational physics - first author on an [IEEE IVNC 2023 paper](https://doi.org/10.1109/IVNC57695.2023.10188950) written in collaboration with CERN researchers. Over 25,000 GitHub contributions across systems programming, developer tooling, 3D graphics, and autonomous AI agents.
+Full-stack and systems engineer from Estonia, based in Stockholm. Background in machine learning, chemistry, and computational physics - first author on an [IEEE IVNC 2023 paper](https://doi.org/10.1109/IVNC57695.2023.10188950) written in collaboration with CERN researchers. Over 28,000 GitHub contributions across systems programming, developer tooling, 3D graphics, and autonomous AI agents.
 
-**[Portfolio & Contribution Heatmap](https://rorychatt.github.io/rorychatt/)** · **[SpaceCorps Developer Hub](https://spacecorps.github.io)** · **[LinkedIn](https://www.linkedin.com/in/mikael-rinne/)** · **[IVNC 2023 Paper](https://doi.org/10.1109/IVNC57695.2023.10188950)**
+**[CV (PDF)](https://rorychatt.github.io/rorychatt/cv/Mikael-Rinne-CV.pdf)** · **[Portfolio & Contribution Heatmap](https://rorychatt.github.io/rorychatt/)** · **[SpaceCorps Developer Hub](https://spacecorps.github.io)** · **[LinkedIn](https://www.linkedin.com/in/mikael-rinne/)** · **[IVNC 2023 Paper](https://doi.org/10.1109/IVNC57695.2023.10188950)**
 
 ---
 
 ### Core Technical Focus
 
-- **Languages:** Rust, C# / .NET 9, TypeScript, Swift, Kotlin, Python, Fortran, WGSL / GLSL, SQL
+- **Languages:** Rust, C# / .NET 10, TypeScript, Swift, Kotlin, Python, Fortran, WGSL / GLSL, SQL
 - **Systems & 3D Graphics:** `wgpu`, WebGPU, WebGL, three.js, Tokio, Rayon, ECS, crossbeam, binary packet codecs
 - **Agentic AI & Runtimes:** Apple Foundation Models, Gemini Nano / AICore, Anthropic & OpenAI APIs, MCP, Semantic Kernel, Vector Search
 - **Architecture & Engineering:** Compilers, AST diffing, headless browser runtimes, TDD/SOLID, distributed state sync
@@ -42,6 +42,7 @@ Tool-calling runtimes, on-device local model integration, and self-learning agen
 | **[open-apple-models](https://github.com/SpaceCorps/open-apple-models)** | Swift, FoundationModels, C ABI | Real tool calling for Apple's on-device Foundation Models on iOS, iPadOS, macOS and visionOS 27: per-step tool steering, runtime JSON-Schema tools, and a game layer for NPC dialogue, decisions and content generation. Ships as a Swift package, the `oam` CLI, an OpenAI-compatible server with working `tool_calls`, and a JSON-RPC protocol over stdio or a C ABI (C, Python and Unity C# bindings). Pre-release, no tagged release yet. MIT. [Docs](https://spacecorps.github.io/open-apple-models/). |
 | **[open-android-models](https://github.com/SpaceCorps/open-android-models)** | Kotlin, ML Kit GenAI, JNI | The Android sibling on Gemini Nano (AICore / ML Kit GenAI Prompt API). Gemini Nano has no native tool calling yet, so tools run through a validated JSON step envelope. Kotlin agent core, the same game layer, and the same JSON-RPC protocol v1.0 over JNI, so an engine can inject either backend per platform. Pre-release: tested on the JVM and against Apple's on-device model as a proxy, not yet on a Gemini Nano device. MIT. |
 | **[open-agents](https://github.com/SpaceCorps/open-agents)** | Rust, TypeScript | CLI-first autonomous coding agent runner: dynamic model selection, structured tool execution, and self-learning project memory. |
+| **[open-apply](https://github.com/SpaceCorps/open-apply)** | Rust, SQLite, Vite+ | CLI for running a job search with an AI agent: finds postings in public feeds, prepares materials per job, records every application and tracks employer replies. YAML or JSON output, stable exit codes, prompt-injection-aware. Pre-release, MIT. [Docs](https://spacecorps.github.io/open-apply/). |
 | **[open-browser](https://github.com/SpaceCorps/open-browser)** | Rust, TypeScript, Playwright | Agentic browser automation platform: Rust backend daemon + web interface enabling autonomous agents to navigate, inspect, and interact with the web. |
 | **[brainwares](https://github.com/SpaceCorps/brainwares)** | Rust | High-efficiency memory vault system and semantic code storage optimized for coding agents. |
 | **[web-demo-generator](https://github.com/SpaceCorps/web-demo-generator)** | TypeScript, Puppeteer, FFmpeg | Automated product demo generator: simulates human browser interactions, captures live UI changes, and renders H.264 video patchnotes. |
@@ -109,8 +110,8 @@ Core developer platforms and compilers powering full-stack C# and agentic softwa
 
 | Project | Stack | Description |
 | :--- | :--- | :--- |
-| **[Ivy-Framework](https://github.com/Ivy-Interactive/Ivy-Framework)** (435 stars) | C#, .NET 9, Roslyn, TypeScript | Full-stack framework for building internal web tools with LLM code generation. Unifies front-end and back-end in a single C# codebase with instant hot-reload. 1st founding engineer & core architect. |
-| **[Ivy-Tendril](https://github.com/Ivy-Interactive/Ivy-Tendril)** (198 stars) | C#, .NET 9, Agent Runtimes | Next-generation developer environment built for when AI agents write 99% of code. Led implementation from first commit: 2,000+ commits and 650+ PRs in under six months. |
+| **[Ivy-Framework](https://github.com/Ivy-Interactive/Ivy-Framework)** (<!--f:fw_stars-->435<!--/f--> stars) | C#, .NET 10, Roslyn, TypeScript | Full-stack framework for building internal web tools with LLM code generation. Unifies front-end and back-end in a single C# codebase with instant hot-reload. 1st founding engineer & core architect. |
+| **[Ivy-Tendril](https://github.com/Ivy-Interactive/Ivy-Tendril)** (<!--f:te_stars-->201<!--/f--> stars) | C#, .NET 10, Agent Runtimes | Next-generation developer environment built for when AI agents write 99% of code. Lead engineer since the first commit in April 2026: <!--f:te_commits_me-->2,128<!--/f--> commits and <!--f:te_prs-->652<!--/f--> PRs. |
 | **[Rusty-Framework](https://github.com/Ivy-Interactive/Rusty-Framework)** | Rust, axum, WASM | Full-stack web application framework in pure Rust: porting Ivy's single-language unified architecture to systems programming. |
 | **[Ivy.NativeJsonDiff](https://github.com/Ivy-Interactive/Ivy.NativeJsonDiff)** | C#, Rust | High-performance native JSON diffing engine for reactive UI updates and state synchronization across the wire. |
 | **[Ivy.Docs.Compiler](https://github.com/Ivy-Interactive/Ivy.Docs.Compiler)** | Rust | High-speed documentation compiler and markdown AST transformer powering Ivy developer docs. |

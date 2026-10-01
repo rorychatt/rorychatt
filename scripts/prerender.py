@@ -8,7 +8,12 @@ would produce into the container elements, between BEGIN/END marker comments
 so the next run can replace it cleanly.
 
     python3 scripts/prerender.py
+
+It also fills the <!--f:key-->value<!--/f--> markers in index.html, README.md
+and cv/index.html from the `facts` block of data.js, and draws the 365-day
+activity graph in cv/index.html from the same daily calendar.
 """
+import datetime
 import hashlib
 import html
 import json
@@ -41,7 +46,7 @@ def lc(lang):
 
 
 def load():
-    raw = (ROOT / "assets" / "data.js").read_text().strip().rstrip(";")
+    raw = read(ROOT / "assets" / "data.js").strip().rstrip(";")
     return json.loads(raw[raw.index("=") + 1:].strip())
 
 
@@ -145,16 +150,142 @@ def splice(src, marker, inner):
     raise SystemExit(f"marker {marker!r} not found in index.html")
 
 
+# ---- live numbers and the CV activity graph ---------------------------------
+
+FACT = re.compile(r"<!--f:(\w+)(?:\|(\w+))?-->.*?<!--/f-->", re.S)
+
+
+def read(path):
+    return path.read_bytes().decode("utf-8")
+
+
+def write(path, text):
+    path.write_bytes(text.encode("utf-8"))
+
+
+def fact_values(gh):
+    f = dict(gh["facts"])
+    f["core_commits"] = f["fw_commits_me"] + f["te_commits_me"]
+    f["fw_share"] = round(100 * f["fw_commits_me"] / f["fw_commits_all"])
+    f["te_share"] = round(100 * f["te_commits_me"] / f["te_commits_all"])
+    d = datetime.date.fromisoformat(gh["totals"]["generated"])
+    f["generated_long"] = f"{d.day} {d.strftime('%B %Y')}"
+    f["contrib_floor"] = gh["totals"]["contributions"] // 1000 * 1000
+    return f
+
+
+def phrase_rules(v):
+    """Numbers that live in meta attributes and plain text, where comment markers can't go."""
+    k = f"{v['contrib_floor']:,}"
+    return [
+        (r"[\d,]+\+ GitHub contributions", f"{k}+ GitHub contributions"),
+        (r"Over [\d,]+ GitHub contributions", f"Over {k} GitHub contributions"),
+        (r"— [\d,]+\+ contributions", f"— {k}+ contributions"),
+        (r"(Ivy-Framework\)\s*\(C#, )\d+(★\))", rf"\g<1>{v['fw_stars']}\g<2>"),
+        (r"(Ivy-Tendril\)\s*\(C#, )\d+(★\))", rf"\g<1>{v['te_stars']}\g<2>"),
+        (r"\d+(★ — C# full-stack framework)", rf"{v['fw_stars']}\g<1>"),
+    ]
+
+
+def apply_phrases(src, v):
+    for pat, repl in phrase_rules(v):
+        src = re.sub(pat, repl, src)
+    return src
+
+
+def fmt_fact(value, how):
+    if how == "floor100":
+        return f"{value // 100 * 100:,}+"
+    if how == "pct":
+        return f"{value}%"
+    if how == "raw":
+        return str(value)
+    return f"{value:,}" if isinstance(value, int) else str(value)
+
+
+def fill_facts(src, values):
+    def sub(m):
+        key, how = m.group(1), m.group(2)
+        if key not in values:
+            raise SystemExit(f"unknown fact {key!r}")
+        tag = f"{key}|{how}" if how else key
+        return f"<!--f:{tag}-->{fmt_fact(values[key], how or 'int')}<!--/f-->"
+
+    return FACT.sub(sub, src)
+
+
+def activity_html(gh):
+    """GitHub-style contribution graph for the last 365 days, as inline SVG."""
+    end = datetime.date.fromisoformat(gh["totals"]["generated"])
+    start = end - datetime.timedelta(days=364)
+    grid_start = start - datetime.timedelta(days=(start.weekday() + 1) % 7)  # Sunday on or before
+    counts = {}
+    for i in range(365):
+        d = start + datetime.timedelta(days=i)
+        counts[d] = gh["days"].get(d.isoformat(), 0)
+
+    nz = sorted(c for c in counts.values() if c)
+    q = [nz[len(nz) // 4], nz[len(nz) // 2], nz[(3 * len(nz)) // 4]] if nz else [1, 2, 3]
+
+    def level(c):
+        return 0 if not c else 1 if c <= q[0] else 2 if c <= q[1] else 3 if c <= q[2] else 4
+
+    pitch, cell, left, top = 11, 9, 22, 14
+    cols = (end - grid_start).days // 7 + 1
+    width, height = left + cols * pitch, top + 7 * pitch
+
+    rects, months, last_month, last_col = [], [], None, -9
+    for d, c in counts.items():
+        col, row = (d - grid_start).days // 7, (d.weekday() + 1) % 7
+        s = "" if c == 1 else "s"
+        rects.append(f'<rect x="{left + col * pitch}" y="{top + row * pitch}" width="{cell}" height="{cell}" '
+                     f'rx="2" class="l{level(c)}"><title>{d.isoformat()}: {c} contribution{s}</title></rect>')
+        if row == 0 or d == start:
+            if d.month != last_month and col - last_col >= 3:
+                months.append(f'<text x="{left + col * pitch}" y="{top - 5}" class="mo">{d.strftime("%b")}</text>')
+                last_month, last_col = d.month, col
+    days_lbl = "".join(f'<text x="0" y="{top + r * pitch + cell - 1}" class="dw">{n}</text>'
+                       for r, n in ((1, "Mon"), (3, "Wed"), (5, "Fri")))
+
+    total = sum(counts.values())
+    active = sum(1 for c in counts.values() if c)
+    best = run = 0
+    for c in counts.values():
+        run = run + 1 if c else 0
+        best = max(best, run)
+
+    return (
+        f'      <p class="act-sum"><b>{total:,}</b> contributions in the last 365 days &middot; '
+        f'<b>{active}</b> active days &middot; longest streak <b>{best}</b> days</p>\n'
+        f'      <svg class="act-graph" viewBox="0 0 {width} {height}" role="img" '
+        f'aria-label="GitHub contributions per day, last 365 days, {total:,} in total">'
+        f'{"".join(months)}{days_lbl}{"".join(rects)}</svg>\n'
+        '      <div class="act-legend">Less <i class="l0"></i><i class="l1"></i><i class="l2"></i>'
+        '<i class="l3"></i><i class="l4"></i> More</div>')
+
+
 def main():
     gh = load()
-    s = (ROOT / "index.html").read_text()
+    values = fact_values(gh)
+    s = read(ROOT / "index.html")
     s = splice(s, "stats", stats_html(gh))
     s = splice(s, "projects", projects_html(gh))
     s = splice(s, "timeline", timeline_html(gh))
     s = re.sub(r'(Git data generated )[\d-]+', r"\g<1>" + gh["totals"]["generated"], s)
+    s = apply_phrases(fill_facts(s, values), values)
     s = bust(s)
-    (ROOT / "index.html").write_text(s)
-    print(f'pre-rendered {len(gh["projects"])} projects, {len(gh["timeline"])} timeline rows')
+    write(ROOT / "index.html", s)
+
+    readme = ROOT / "README.md"
+    write(readme, apply_phrases(fill_facts(read(readme), values), values))
+
+    llms = ROOT / "llms.txt"
+    write(llms, apply_phrases(read(llms), values))
+
+    cv = ROOT / "cv" / "index.html"
+    write(cv, fill_facts(splice(read(cv), "activity", activity_html(gh)), values))
+    print(f'pre-rendered {len(gh["projects"])} projects, {len(gh["timeline"])} timeline rows, '
+          f'facts and the CV activity graph')
 
 
 if __name__ == "__main__":

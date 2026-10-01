@@ -14,7 +14,7 @@
     "name": "Ivy Tendril",
     "lang": "C#",
     "desc": "What replaces your IDE in an agentic era \u2014 a developer tool built for when agents write 99% of the code and your job is knowing what good looks like.",
-    "role": "Led design and implementation from the first commit. 2,000 commits and 650+ PRs in under six months.",
+    "role": "Lead engineer since the first commit in April 2026: design, implementation and the agent orchestration layer.",
     "url": "https://github.com/Ivy-Interactive/Ivy-Tendril",
     "stars": 198,
     "period": "2026"
@@ -166,6 +166,16 @@
     "desc": "CLI-first autonomous coding agent runner: dynamic LLM provider selection, multi-step tool execution, and self-learning project memory across development sessions.",
     "role": "Engineered the core agent execution loop and memory vault integration in Rust, enabling coding agents to maintain persistent understanding of codebases.",
     "url": "https://github.com/SpaceCorps/open-agents",
+    "stars": 0,
+    "period": "2026"
+  },
+  {
+    "full": "SpaceCorps/open-apply",
+    "name": "open-apply",
+    "lang": "Rust",
+    "desc": "CLI for running a job search with an AI agent: finds postings in public feeds, prepares materials per job, records every application and tracks employer replies. YAML or JSON output, stable exit codes, SQLite, MIT.",
+    "role": "Designed and built with Claude Code: guardrails against low-quality mass applying (daily cap, per-company cooldown), prompt-injection-aware handling of job posts and emails, a Claude Code skill, and a Vite+ docs site. Pre-release: no tagged release yet.",
+    "url": "https://github.com/SpaceCorps/open-apply",
     "stars": 0,
     "period": "2026"
   },
