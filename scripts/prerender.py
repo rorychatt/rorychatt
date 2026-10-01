@@ -47,7 +47,9 @@ def lc(lang):
 
 def load():
     raw = read(ROOT / "assets" / "data.js").strip().rstrip(";")
-    return json.loads(raw[raw.index("=") + 1:].strip())
+    data = json.loads(raw[raw.index("=") + 1:].strip())
+    data["timeline"] = [r for r in data["timeline"] if not r.get("priv")]  # never render private names
+    return data
 
 
 def stats_html(gh):

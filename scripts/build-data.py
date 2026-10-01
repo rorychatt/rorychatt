@@ -144,7 +144,13 @@ def load_existing():
     return json.loads(raw[raw.index("=") + 1:].strip())
 
 
+def public_only(timeline):
+    """Private repository names are never published; they stay in the aggregate counts only."""
+    return [r for r in timeline if not r.get("priv")]
+
+
 def write(data):
+    data["timeline"] = public_only(data.get("timeline", []))
     DATA.write_bytes(("window.GH = " + json.dumps(data, separators=(",", ":")) + "\n").encode("utf-8"))
 
 
@@ -211,7 +217,7 @@ def main_full():
         {"full": n, "commits": c, "lang": meta[n]["lang"] or "",
          "from": first[n], "to": last[n], "priv": meta[n]["private"]}
         for n, c in sorted(tot.items(), key=lambda x: (first[x[0]], -x[1]))
-        if c >= 8
+        if c >= 8 and not meta[n]["private"]
     ]
 
     try:
