@@ -36,7 +36,7 @@ Contact: mikael@spacecorpstechnology.com
   Anthropic and OpenAI APIs, Microsoft.Extensions.AI, Semantic Kernel, Qdrant/pgvector,
   structured output and tool calling, prompt and eval harnesses, on-device models (Apple
   Foundation Models, Gemini Nano)
-- **Backend:** .NET 9, ASP.NET MVC/WebAPI, Entity Framework Core, SignalR, PostgreSQL, Dapper,
+- **Backend:** .NET 10, ASP.NET MVC/WebAPI, Entity Framework Core, SignalR, PostgreSQL, Dapper,
   .NET Aspire, Node.js, FastAPI, SQL Server, Redis, ANTLR
 - **Rust & systems:** Tokio, serde, Cargo workspaces, axum, tracing, crossbeam, criterion,
   proptest, redb/bincode, Tauri, binary protocols, lock-free concurrency

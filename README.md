@@ -10,7 +10,7 @@ Full-stack and systems engineer from Estonia, based in Stockholm. Background in 
 
 ### Core Technical Focus
 
-- **Languages:** Rust, C# / .NET 9, TypeScript, Swift, Kotlin, Python, Fortran, WGSL / GLSL, SQL
+- **Languages:** Rust, C# / .NET 10, TypeScript, Swift, Kotlin, Python, Fortran, WGSL / GLSL, SQL
 - **Systems & 3D Graphics:** `wgpu`, WebGPU, WebGL, three.js, Tokio, Rayon, ECS, crossbeam, binary packet codecs
 - **Agentic AI & Runtimes:** Apple Foundation Models, Gemini Nano / AICore, Anthropic & OpenAI APIs, MCP, Semantic Kernel, Vector Search
 - **Architecture & Engineering:** Compilers, AST diffing, headless browser runtimes, TDD/SOLID, distributed state sync
@@ -109,8 +109,8 @@ Core developer platforms and compilers powering full-stack C# and agentic softwa
 
 | Project | Stack | Description |
 | :--- | :--- | :--- |
-| **[Ivy-Framework](https://github.com/Ivy-Interactive/Ivy-Framework)** (435 stars) | C#, .NET 9, Roslyn, TypeScript | Full-stack framework for building internal web tools with LLM code generation. Unifies front-end and back-end in a single C# codebase with instant hot-reload. 1st founding engineer & core architect. |
-| **[Ivy-Tendril](https://github.com/Ivy-Interactive/Ivy-Tendril)** (198 stars) | C#, .NET 9, Agent Runtimes | Next-generation developer environment built for when AI agents write 99% of code. Led implementation from first commit: 2,000+ commits and 650+ PRs in under six months. |
+| **[Ivy-Framework](https://github.com/Ivy-Interactive/Ivy-Framework)** (435 stars) | C#, .NET 10, Roslyn, TypeScript | Full-stack framework for building internal web tools with LLM code generation. Unifies front-end and back-end in a single C# codebase with instant hot-reload. 1st founding engineer & core architect. |
+| **[Ivy-Tendril](https://github.com/Ivy-Interactive/Ivy-Tendril)** (198 stars) | C#, .NET 10, Agent Runtimes | Next-generation developer environment built for when AI agents write 99% of code. Led implementation from first commit: 2,000+ commits and 650+ PRs in under six months. |
 | **[Rusty-Framework](https://github.com/Ivy-Interactive/Rusty-Framework)** | Rust, axum, WASM | Full-stack web application framework in pure Rust: porting Ivy's single-language unified architecture to systems programming. |
 | **[Ivy.NativeJsonDiff](https://github.com/Ivy-Interactive/Ivy.NativeJsonDiff)** | C#, Rust | High-performance native JSON diffing engine for reactive UI updates and state synchronization across the wire. |
 | **[Ivy.Docs.Compiler](https://github.com/Ivy-Interactive/Ivy.Docs.Compiler)** | Rust | High-speed documentation compiler and markdown AST transformer powering Ivy developer docs. |
