@@ -36,6 +36,14 @@ jobs:
         with:
           node-version: 22
 
+      - name: Report whether STATS_TOKEN reached the job
+        run: |
+          if [ -n "$STATS_TOKEN" ]; then
+            echo "STATS_TOKEN is set (${#STATS_TOKEN} characters)"
+          else
+            echo "STATS_TOKEN is empty or missing"
+          fi
+
       - name: Refresh data (full, private repositories included)
         if: env.STATS_TOKEN != ''
         env:
