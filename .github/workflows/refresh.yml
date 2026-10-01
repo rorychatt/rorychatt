@@ -12,12 +12,6 @@ on:
   schedule:
     - cron: "23 4 * * *"
   workflow_dispatch:
-  push:
-    branches: [add-cv]
-    paths:
-      - ".github/workflows/refresh.yml"
-      - "scripts/**"
-      - "cv/**"
 
 permissions:
   contents: write
