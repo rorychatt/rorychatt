@@ -86,8 +86,8 @@ Contact: mikael@spacecorpstechnology.com
   coding agent runner with multi-step tool execution and self-learning project memory.
 - [open-apply](https://github.com/SpaceCorps/open-apply) (Rust, MIT, 2026): CLI for running a job
   search with an AI agent. Finds postings in public feeds, prepares materials per job, records every
-  application and tracks employer replies; YAML or JSON output and stable exit codes. Pre-release, no
-  tagged release yet. Docs: https://spacecorps.github.io/open-apply/
+  application and tracks employer replies; YAML or JSON output and stable exit codes. Pre-release
+  (v0.1.0, binaries for macOS, Linux and Windows). Docs: https://spacecorps.github.io/open-apply/
 
 ## Links
 

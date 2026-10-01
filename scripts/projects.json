@@ -174,7 +174,7 @@
     "name": "open-apply",
     "lang": "Rust",
     "desc": "CLI for running a job search with an AI agent: finds postings in public feeds, prepares materials per job, records every application and tracks employer replies. YAML or JSON output, stable exit codes, SQLite, MIT.",
-    "role": "Designed and built with Claude Code: guardrails against low-quality mass applying (daily cap, per-company cooldown), prompt-injection-aware handling of job posts and emails, a Claude Code skill, and a Vite+ docs site. Pre-release: no tagged release yet.",
+    "role": "Designed and built with Claude Code: guardrails against low-quality mass applying (daily cap, per-company cooldown), prompt-injection-aware handling of job posts and emails, a Claude Code skill, and a Vite+ docs site. Pre-release: v0.1.0 with binaries for five platforms.",
     "url": "https://github.com/SpaceCorps/open-apply",
     "stars": 0,
     "period": "2026"
