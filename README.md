@@ -10,7 +10,7 @@ Full-stack and systems engineer from Estonia, based in Stockholm. Background in 
 
 ### Core Technical Focus
 
-- **Languages:** Rust, C# / .NET 10, TypeScript, Swift, Kotlin, Python, Fortran, WGSL / GLSL, SQL
+- **Languages:** Rust, C# / .NET 10, TypeScript, Go, Swift, Kotlin, Python, Fortran, WGSL / GLSL, SQL
 - **Systems & 3D Graphics:** `wgpu`, WebGPU, WebGL, three.js, Tokio, Rayon, ECS, crossbeam, binary packet codecs
 - **Agentic AI & Runtimes:** Apple Foundation Models, Gemini Nano / AICore, Anthropic & OpenAI APIs, MCP, Semantic Kernel, Vector Search
 - **Architecture & Engineering:** Compilers, AST diffing, headless browser runtimes, TDD/SOLID, distributed state sync

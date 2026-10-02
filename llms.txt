@@ -30,7 +30,7 @@ Contact: mikael@spacecorpstechnology.com
 
 ## Technical focus
 
-- **Languages:** C#, TypeScript, Rust, JavaScript, Python, SQL, WGSL/GLSL, PowerShell/Bash,
+- **Languages:** C#, TypeScript, Rust, Go, JavaScript, Python, SQL, WGSL/GLSL, PowerShell/Bash,
   C/C++, Java, Fortran, Assembler, MATLAB, Dart, Swift, Kotlin
 - **AI engineering:** RAG pipelines, embeddings and vector search, agentic tooling, MCP,
   Anthropic and OpenAI APIs, Microsoft.Extensions.AI, Semantic Kernel, Qdrant/pgvector,
@@ -45,7 +45,7 @@ Contact: mikael@spacecorpstechnology.com
 - **Scientific computing:** neural networks, XGBoost, Monte-Carlo simulation, Gaussian
   approximations, molecular dynamics, TensorFlow, NumPy/SciPy, COMSOL, Modelica
 - **Practice:** TDD/SOLID, CI/CD, GitHub Actions, Playwright, Docker, xUnit, Vitest/Jest,
-  Kubernetes, AWS/Azure, mob programming, Agile
+  Kubernetes, AWS/Azure/GCP, mob programming, Agile
 
 ## Pages
 
