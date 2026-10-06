@@ -2,7 +2,7 @@
 
 **1st Founding Engineer [@Ivy-Interactive](https://github.com/Ivy-Interactive)** · **Founder & CEO [@SpaceCorps](https://github.com/SpaceCorps)**
 
-Full-stack and systems engineer from Estonia, based in Stockholm. Background in machine learning, chemistry, and computational physics - first author on an [IEEE IVNC 2023 paper](https://doi.org/10.1109/IVNC57695.2023.10188950) written in collaboration with CERN researchers. Over 29,000 GitHub contributions across systems programming, developer tooling, 3D graphics, and autonomous AI agents.
+Full-stack and systems engineer from Estonia, based in Stockholm. Background in machine learning, chemistry, and computational physics - first author on an [IEEE IVNC 2023 paper](https://doi.org/10.1109/IVNC57695.2023.10188950) written in collaboration with CERN researchers. Over 30,000 GitHub contributions across systems programming, developer tooling, 3D graphics, and autonomous AI agents.
 
 **[CV (PDF)](https://rorychatt.github.io/rorychatt/cv/Mikael-Rinne-CV.pdf)** · **[Portfolio & Contribution Heatmap](https://rorychatt.github.io/rorychatt/)** · **[SpaceCorps Developer Hub](https://spacecorps.github.io)** · **[LinkedIn](https://www.linkedin.com/in/mikael-rinne/)** · **[IVNC 2023 Paper](https://doi.org/10.1109/IVNC57695.2023.10188950)**
 
