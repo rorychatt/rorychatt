@@ -2,7 +2,7 @@
 
 **1st Founding Engineer [@Ivy-Interactive](https://github.com/Ivy-Interactive)** · **Founder & CEO [@SpaceCorps](https://github.com/SpaceCorps)**
 
-Full-stack and systems engineer from Estonia, based in Stockholm. Background in machine learning, chemistry, and computational physics - first author on an [IEEE IVNC 2023 paper](https://doi.org/10.1109/IVNC57695.2023.10188950) written in collaboration with CERN researchers. Over 30,000 GitHub contributions across systems programming, developer tooling, 3D graphics, and autonomous AI agents.
+Full-stack and systems engineer from Estonia, based in Stockholm. Background in machine learning, chemistry, and computational physics - first author on an [IEEE IVNC 2023 paper](https://doi.org/10.1109/IVNC57695.2023.10188950) written in collaboration with CERN researchers. Over 31,000 GitHub contributions across systems programming, developer tooling, 3D graphics, and autonomous AI agents.
 
 **[CV (PDF)](https://rorychatt.github.io/rorychatt/cv/Mikael-Rinne-CV.pdf)** · **[Portfolio & Contribution Heatmap](https://rorychatt.github.io/rorychatt/)** · **[SpaceCorps Developer Hub](https://spacecorps.github.io)** · **[LinkedIn](https://www.linkedin.com/in/mikael-rinne/)** · **[IVNC 2023 Paper](https://doi.org/10.1109/IVNC57695.2023.10188950)**
 
@@ -111,7 +111,7 @@ Core developer platforms and compilers powering full-stack C# and agentic softwa
 | Project | Stack | Description |
 | :--- | :--- | :--- |
 | **[Ivy-Framework](https://github.com/Ivy-Interactive/Ivy-Framework)** (<!--f:fw_stars-->435<!--/f--> stars) | C#, .NET 10, Roslyn, TypeScript | Full-stack framework for building internal web tools with LLM code generation. Unifies front-end and back-end in a single C# codebase with instant hot-reload. 1st founding engineer & core architect. |
-| **[Ivy-Tendril](https://github.com/Ivy-Interactive/Ivy-Tendril)** (<!--f:te_stars-->201<!--/f--> stars) | C#, .NET 10, Agent Runtimes | Next-generation developer environment built for when AI agents write 99% of code. Lead engineer since the first commit in April 2026: <!--f:te_commits_me-->2,128<!--/f--> commits and <!--f:te_prs-->652<!--/f--> PRs. |
+| **[Ivy-Tendril](https://github.com/Ivy-Interactive/Ivy-Tendril)** (<!--f:te_stars-->200<!--/f--> stars) | C#, .NET 10, Agent Runtimes | Next-generation developer environment built for when AI agents write 99% of code. Lead engineer since the first commit in April 2026: <!--f:te_commits_me-->2,128<!--/f--> commits and <!--f:te_prs-->652<!--/f--> PRs. |
 | **[Rusty-Framework](https://github.com/Ivy-Interactive/Rusty-Framework)** | Rust, axum, WASM | Full-stack web application framework in pure Rust: porting Ivy's single-language unified architecture to systems programming. |
 | **[Ivy.NativeJsonDiff](https://github.com/Ivy-Interactive/Ivy.NativeJsonDiff)** | C#, Rust | High-performance native JSON diffing engine for reactive UI updates and state synchronization across the wire. |
 | **[Ivy.Docs.Compiler](https://github.com/Ivy-Interactive/Ivy.Docs.Compiler)** | Rust | High-speed documentation compiler and markdown AST transformer powering Ivy developer docs. |
